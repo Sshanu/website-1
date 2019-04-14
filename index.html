@@ -82,1436 +82,748 @@
 
 <body>
   <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-      <td>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="67%" valign="middle">
-              <p align="center">
-                <name>Jon Barron</name>
-              </p>
-              <p>I am a staff research scientist at <a href="https://ai.google/research">Google Research</a>, where I work on computer vision and computational photography. At Google I've worked on <a href="https://ai.googleblog.com/2014/04/lens-blur-in-new-google-camera-app.html">Lens Blur</a>, <a href="https://ai.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">HDR+</a>, <a href="https://www.google.com/get/cardboard/jump/">Jump</a>, <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">Portrait Mode</a>, and <a href="https://www.youtube.com/watch?v=JSnB06um5r4">Glass</a>.
-              </p>
-              <p>
-                I did my PhD at <a href="http://www.eecs.berkeley.edu/">UC Berkeley</a>, where I was advised by <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a> and funded by the <a href="http://www.nsfgrfp.org/">NSF GRFP</a>. I've spent time at <a href="https://en.wikipedia.org/wiki/Google_X">Google[x]</a>, <a href="http://groups.csail.mit.edu/vision/welcome/">MIT CSAIL</a>, <a href="http://www.captricity.com/">Captricity</a>, <a href="https://www.nasa.gov/ames">NASA Ames</a>, <a href="http://www.google.com/">Google NYC</a>, the <a href="http://mrl.nyu.edu/">NYU MRL</a>, <a href="http://www.nibr.com/">Novartis</a>, and <a href="http://www.astrometry.net/">Astrometry.net</a>. I did my bachelors at the <a href="http://cs.toronto.edu">University of Toronto</a>.
-              </p>
-              <p align=center>
-                <a href="mailto:jonbarron@gmail.com">Email</a> &nbsp/&nbsp
-                <a href="data/JonBarron-CV.pdf">CV</a> &nbsp/&nbsp
-                <a href="data/JonBarron-bio.txt">Biography</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Google Scholar</a> &nbsp/&nbsp
-                <a href="http://www.linkedin.com/in/jonathanbarron/"> LinkedIn </a>
-              </p>
-            </td>
-            <td width="33%">
-              <img src="images/JonBarron_circle.jpg">
-            </td>
-          </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td width="100%" valign="middle">
-              <heading>Research</heading>
-              <p>
-                I'm interested in computer vision, machine learning, statistics, optimization, image processing, virtual reality, and computational photography. Much of my research is about inferring the physical world (shape, depth, motion, paint, light, colors, etc) from images. I have also worked in astronomy and biology. Representative papers are <span class="highlight">highlighted</span>.
-              </p>
-            </td>
-          </tr>
-        </table>
+    <tbody><tr><td>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr onmouseout="dpzlearn_stop()" onmouseover="dpzlearn_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='dpzlearn_image'><img src='images/dpzlearn_after.jpg'></div>
-                <img src='images/dpzlearn_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function dpzlearn_start() {
-                  document.getElementById('dpzlearn_image').style.opacity = "1";
-                }
-
-                function dpzlearn_stop() {
-                  document.getElementById('dpzlearn_image').style.opacity = "0";
-                }
-                dpzlearn_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://arxiv.org/abs/1904.05822">
-                <papertitle>Learning Single Camera Depth Estimation using Dual-Pixels
-</papertitle>
-              </a>
-              <br>
-              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
-              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
-              Sameer Ansari,
-              <strong>Jonathan T. Barron</strong>
-              <br>
-              arXiv:1904.05822
-              <br>
-              <p></p>
-              <p>Considering the optics of dual-pixel image sensors improves monocular depth estimation techniques.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="unprocessing_stop()" onmouseover="unprocessing_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='unprocessing_image'><img src='images/unprocessing_after.jpg'></div>
-                <img src='images/unprocessing_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function unprocessing_start() {
-                  document.getElementById('unprocessing_image').style.opacity = "1";
-                }
-
-                function unprocessing_stop() {
-                  document.getElementById('unprocessing_image').style.opacity = "0";
-                }
-                unprocessing_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://drive.google.com/file/d/1H0Wtd--un2JN76dUJN8iC9fWfkA16n8D/view?usp=sharing">
-                <papertitle>Unprocessing Images for Learned Raw Denoising</papertitle>
-              </a>
-              <br>
-              <a href="http://timothybrooks.com/">Tim Brooks</a>,
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
-              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
-              <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
-              <strong>Jonathan T. Barron</strong>
-              <br>
-              <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://arxiv.org/abs/1811.11127">arxiv</a> /
-              <a href="http://timothybrooks.com/tech/unprocessing/">project page</a> /
-			  <a href="data/BrooksCVPR2019.bib">bibtex</a>
-              <p></p>
-              <p>We can learn a better denoising model by processing and unprocessing images the same way a camera does.</p>
-            </td>
-          </tr>
-
-      <tr onmouseout="motionblur_stop()" onmouseover="motionblur_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='motionblur_image'><img src='images/motionblur_after.jpg'></div>
-                <img src='images/motionblur_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function motionblur_start() {
-                  document.getElementById('motionblur_image').style.opacity = "1";
-                }
-
-                function motionblur_stop() {
-                  document.getElementById('motionblur_image').style.opacity = "0";
-                }
-                motionblur_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://drive.google.com/file/d/1hWpA4f6iLVcOkZI3zEAAWKARSQhnVgbY/view?usp=sharing">
-                <papertitle>Learning to Synthesize Motion Blur</papertitle>
-              </a>
-              <br>
-              <a href="http://timothybrooks.com/">Tim Brooks</a>,
-              <strong>Jonathan T. Barron</strong>
-              <br>
-              <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-			  <a href="https://arxiv.org/abs/1811.11745">arxiv</a> / 
-			  <a href="https://drive.google.com/file/d/1dUQwBMmQdYYIP0zHR_nDQY-uQbaMdcSN/view?usp=sharing">supplement</a> /  
-              <a href="http://timothybrooks.com/tech/motion-blur/">project page</a> / 
-              <a href="https://www.youtube.com/watch?v=8T1jjSz-2V8">video</a> / 
-			  <a href="data/BrooksBarronCVPR2019.bib">bibtex</a>
-              <p></p>
-              <p>Frame interpolation techniques can be used to train a network that directly synthesizes linear blur kernels.</p>
-            </td>
-          </tr>
-          
-      <tr onmouseout="mpi_stop()" onmouseover="mpi_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='mpi_image'><img src='images/mpi_after.jpg'></div>
-                <img src='images/mpi_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function mpi_start() {
-                  document.getElementById('mpi_image').style.opacity = "1";
-                }
-
-                function mpi_stop() {
-                  document.getElementById('mpi_image').style.opacity = "0";
-                }
-                mpi_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://drive.google.com/file/d/1TU5L6fnt4Kd49IUOU7aNxor5NIgdHuNG/view?usp=sharing">
-                <papertitle>Pushing the Boundaries of View Extrapolation with Multiplane Images</papertitle>
-              </a>
-              <br>			  
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul P. Srinivasan</a>,
-              Richard Tucker,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>,
-              <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
-              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>
-              <br>
-              <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-			  <a href="https://drive.google.com/file/d/1GUW_n-BAn9Q4VntEA_OTHNJiHO7XfC62/view?usp=sharing">supplement</a> /
-              <a href="https://www.youtube.com/watch?v=aJqAaMNL2m4">video</a> /
-              <a href="data/SrinivasanCVPR2019.bib">bibtex</a>
-              <p></p>
-              <p>View extrapolation with multiplane images works better if you reason about disocclusions and disparity sampling frequencies.</p>
-            </td>
-          </tr>
-          
-      <tr onmouseout="loss_stop()" onmouseover="loss_start()" bgcolor="#ffffd0">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='loss_image'><img src='images/loss_after.png'></div>
-                <img src='images/loss_before.png'>
-              </div>
-              <script type="text/javascript">
-                function loss_start() {
-                  document.getElementById('loss_image').style.opacity = "1";
-                }
-
-                function loss_stop() {
-                  document.getElementById('loss_image').style.opacity = "0";
-                }
-                loss_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/open?id=1xpZ0fL9h1y9RfcTyPgVkxUrF3VwdkBvq">
-                  <papertitle>A General and Adaptive Robust Loss Function</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>
-                <br>
-                <em>CVPR</em>, 2019 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-                <br>
-                <a href="https://arxiv.org/abs/1701.03077">arxiv</a> /
-                <a href="https://drive.google.com/open?id=1HNveL7xSNh6Ss7sxLK8Mw2L1Fc-rRhL4">supplement</a> /
-                <a href="https://github.com/google-research/google-research/tree/master/robust_loss">code</a> / 
-		<a href="data/BarronCVPR2019_reviews.txt">reviews</a> / 
-		<a href="data/BarronCVPR2019.bib">bibtex</a>
-                <p></p>
-                <p>A single robust loss function is a superset of many other common robust loss functions,
-                   and allows training to automatically adapt the robustness of its own loss.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="darkflash_stop()" onmouseover="darkflash_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='darkflash_image'><img src='images/darkflash_after.png'></div>
-                <img src='images/darkflash_before.png'>
-              </div>
-              <script type="text/javascript">
-                function darkflash_start() {
-                  document.getElementById('darkflash_image').style.opacity = "1";
-                }
-
-                function darkflash_stop() {
-                  document.getElementById('darkflash_image').style.opacity = "0";
-                }
-                darkflash_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://arxiv.org/abs/1901.01370">
-                <papertitle>Stereoscopic Dark Flash for Low-light Photography</papertitle>
-              </a>
-              <br>
-              <a href="https://www.andrew.cmu.edu/user/jianwan2/">Jian Wang</a>,
-              <a href="https://people.csail.mit.edu/tfxue/">Tianfan Xue</a>,
-              <strong>Jonathan T. Barron</strong>
-              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>
-              <br>
-              <em>ICCP</em>, 2019
-              <br>
-              <p></p>
-              <p>
-                By making one camera in a stereo pair hyperspectral we can multiplex dark flash pairs in space instead of time.
-              </p>
-            </td>
-          </tr>
-    
-          <tr onmouseout="motionstereo_stop()" onmouseover="motionstereo_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='motionstereo_image'><img src='images/motionstereo_after.png'></div>
-                <img src='images/motionstereo_before.png'>
-              </div>
-              <script type="text/javascript">
-                function motionstereo_start() {
-                  document.getElementById('motionstereo_image').style.opacity = "1";
-                }
-
-                function motionstereo_stop() {
-                  document.getElementById('motionstereo_image').style.opacity = "0";
-                }
-                motionstereo_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://drive.google.com/file/d/1AABFJ3NgD5DAo5JEpEjWZrcQNzjZnvW9/view?usp=sharing">
-              <papertitle>Depth from Motion for Smartphone AR</papertitle>
-              </a>
-              <br>
-              <a href="https://www.linkedin.com/in/valentinjulien/">Julien Valentin</a>,
-              <a href="https://www.linkedin.com/in/adarshkowdle/">Adarsh Kowdle</a>,
-              <strong>Jonathan T. Barron</strong>, <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
-              and others
-              <br>
-              <em>SIGGRAPH Asia</em>, 2018
-              <br>
-              <a href="data/Valentin2018.bib">bibtex</a>
-              <p></p>
-              <p>Depth cues from camera motion allow for real-time occlusion effects in augmented reality applications.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="portrait_stop()" onmouseover="portrait_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='portrait_image'><img src='images/portrait_after.jpg'></div>
-                <img src='images/portrait_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function portrait_start() {
-                  document.getElementById('portrait_image').style.opacity = "1";
-                }
-
-                function portrait_stop() {
-                  document.getElementById('portrait_image').style.opacity = "0";
-                }
-                portrait_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://drive.google.com/file/d/13i6DlS9UhGVKmwslLUFnKBwdxFRVQeQj/view?usp=sharing">
-                <papertitle>Synthetic Depth-of-Field with a Single-Camera Mobile Phone</papertitle>
-              </a>
-              <br>
-              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
-              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
-              <a href="http://graphics.stanford.edu/~dejacobs/">David E. Jacobs</a>, Bryan E. Feldman, Nori Kanazawa, Robert Carroll,
-              <a href="http://www.cs.cmu.edu/~ymovshov/">Yair Movshovitz-Attias</a>,
-              <strong>Jonathan T. Barron</strong>, Yael Pritch,
-              <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy</a>
-              <br>
-              <em>SIGGRAPH</em>, 2018
-              <br>
-              <a href="https://arxiv.org/abs/1806.04171">arxiv</a> /
-              <a href="https://ai.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">blog post</a> /
-              <a href="data/Wadhwa2018.bib">bibtex</a>
-              <p></p>
-              <p>Dual pixel cameras and semantic segmentation algorithms can be used for shallow depth of field effects.</p>
-              <p>This system is the basis for "Portrait Mode" on the Google Pixel 2 smartphones</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="aperture_stop()" onmouseover="aperture_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='aperture_image'><img src='images/aperture_after.jpg'></div>
-                <img src='images/aperture_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function aperture_start() {
-                  document.getElementById('aperture_image').style.opacity = "1";
-                }
-
-                function aperture_stop() {
-                  document.getElementById('aperture_image').style.opacity = "0";
-                }
-                aperture_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://drive.google.com/file/d/1MpvxcW7OTJP321QL_q4ZLQ8D653bZZzy/view?usp=sharing">
-                <papertitle>Aperture Supervision for Monocular Depth Estimation</papertitle>
-              </a>
-              <br>
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul P. Srinivasan</a>,
-              <a href="http://rahuldotgarg.appspot.com/">Rahul Garg</a>,
-              <a href="http://nealwadhwa.com">Neal Wadhwa</a>,
-              <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>,
-              <strong>Jonathan T. Barron</strong>
-              <br>
-              <em>CVPR</em>, 2018
-              <br>
-              <a href="https://github.com/google/aperture_supervision">code</a> /
-              <a href="data/Srinivasan2018.bib">bibtex</a>
-              <p></p>
-              <p>Varying a camera's aperture provides a supervisory signal that can teach a neural network to do monocular depth estimation.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="deepburst_stop()" onmouseover="deepburst_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='deepburst_image'><img src='images/deepburst_after.png'></div>
-                <img src='images/deepburst_before.png'>
-              </div>
-              <script type="text/javascript">
-                function deepburst_start() {
-                  document.getElementById('deepburst_image').style.opacity = "1";
-                }
-
-                function deepburst_stop() {
-                  document.getElementById('deepburst_image').style.opacity = "0";
-                }
-                deepburst_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <a href="https://drive.google.com/file/d/1GAH8ijyZ7GnoBnQFANEzdXinHrE4vvXn/view?usp=sharing">
-                <papertitle>Burst Denoising with Kernel Prediction Networks</papertitle>
-              </a>
-              <br>
-              <a href="https://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall</a>,
-              <strong>Jonathan T. Barron</strong>,
-              <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>,
-              <a href="http://www.dsharlet.com/">Dillon Sharlet</a>,
-              <a href="http://graphics.stanford.edu/~renng/">Ren Ng</a>, Robert Carroll
-              <br>
-              <em>CVPR</em>, 2018 &nbsp <font color=#FF8080><strong>(Spotlight)</strong></font>
-              <br>
-              <a href="https://drive.google.com/file/d/1aqk3Q-L2spjLZh2yRWKUWIDcZkGjQ7US/view?usp=sharing">supplement</a> /
-              <a href="https://github.com/google/burst-denoising">code</a> /
-              <a href="data/Mildenhall2018.bib">bibtex</a>
-              <p></p>
-              <p>We train a network to predict linear kernels that denoise noisy bursts from cellphone cameras.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="friendly_stop()" onmouseover="friendly_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='friendly_image'><img src='images/friendly_after.png'></div>
-                <img src='images/friendly_before.png'>
-              </div>
-              <script type="text/javascript">
-                function friendly_start() {
-                  document.getElementById('friendly_image').style.opacity = "1";
-                }
-
-                function friendly_stop() {
-                  document.getElementById('friendly_image').style.opacity = "0";
-                }
-                friendly_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/1w_0djhL0QgC_fbehnJ0c-J23_kW_420p/view?usp=sharing">
-                  <papertitle>A Hardware-Friendly Bilateral Solver for Real-Time Virtual Reality Video</papertitle>
-                </a>
-                <br>
-                <a href="https://homes.cs.washington.edu/~amrita/">Amrita Mazumdar</a>, <a href="http://homes.cs.washington.edu/~armin/">Armin Alaghi</a>, <strong>Jonathan T. Barron</strong>, <a href="https://www.cs.unc.edu/~gallup/">David Gallup</a>, <a href="https://homes.cs.washington.edu/~luisceze/">Luis Ceze</a>, <a href="https://homes.cs.washington.edu/~oskin/">Mark Oskin</a>, <a href="http://homes.cs.washington.edu/~seitz/">Steven M. Seitz</a>
-                <br>
-                <em>High-Performance Graphics (HPG)</em>, 2017
-                <br>
-                <a href="https://sampa.cs.washington.edu/projects/vr-hw.html">project page</a>
-                <p></p>
-                <p>A reformulation of the bilateral solver can be implemented efficiently on GPUs and FPGAs.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="hdrnet_stop()" onmouseover="hdrnet_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='hdrnet_image'><img src='images/hdrnet_after.jpg'></div>
-                <img src='images/hdrnet_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function hdrnet_start() {
-                  document.getElementById('hdrnet_image').style.opacity = "1";
-                }
-
-                function hdrnet_stop() {
-                  document.getElementById('hdrnet_image').style.opacity = "0";
-                }
-                hdrnet_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/1jQY3CTMnLX7PeGUzYLso9H1eCsZyWbwg/view?usp=sharing">
-                  <papertitle>Deep Bilateral Learning for Real-Time Image Enhancement</papertitle>
-                </a>
-                <br>
-                <a href="http://www.mgharbi.com">Micha&euml;l Gharbi</a>, <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>, <strong>Jonathan T. Barron</strong>, <a href="https://people.csail.mit.edu/hasinoff/">Samuel W. Hasinoff</a>, <a href="http://people.csail.mit.edu/fredo/">Fr&eacute;do Durand </a>
-                <br>
-                <em>SIGGRAPH</em>, 2017
-                <br>
-                <a href="https://groups.csail.mit.edu/graphics/hdrnet/">project page</a> /
-                <a href="https://www.youtube.com/watch?v=GAe0qKKQY_I">video</a> /
-                <a href="data/GharbiSIGGRAPH2017.bib">bibtex</a> /
-                <a href="http://news.mit.edu/2017/automatic-image-retouching-phone-0802">p</a><a href="https://www.wired.com/story/googles-new-algorithm-perfects-photos-before-you-even-take-them/">r</a><a href="https://petapixel.com/2017/08/02/new-ai-can-retouch-photos-snap/">e</a><a href="https://www.theverge.com/2017/8/2/16082272/google-mit-retouch-photos-machine-learning">s</a><a href="http://gizmodo.com/clever-camera-app-uses-deep-learning-to-perfectly-retou-1797474282">s</a>
-                <p></p>
-                <p>By training a deep network in bilateral space we can learn a model for high-resolution and real-time image enhancement.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="ffcc_stop()" onmouseover="ffcc_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='ffcc_image'><img src='images/ffcc_after.jpg'></div>
-                <img src='images/ffcc_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function ffcc_start() {
-                  document.getElementById('ffcc_image').style.opacity = "1";
-                }
-
-                function ffcc_stop() {
-                  document.getElementById('ffcc_image').style.opacity = "0";
-                }
-                ffcc_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/1VDWAS7HgiufTNPP7CQY00KmJP71QIZAy/view?usp=sharing">
-                  <papertitle>Fast Fourier Color Constancy</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, Yun-Ta Tsai
-                <br>
-                <em>CVPR</em>, 2017
-                <br>
-                <a href="https://drive.google.com/file/d/1b5zdR5UYPTkXa2UgiLhi-PP89bzINJSR/view?usp=sharing">supplement</a> /
-                <a href="https://youtu.be/rZCXSfl13rY">video</a> /
-                <a href="data/BarronTsaiCVPR2017.bib">bibtex</a> /
-                <a href="https://github.com/google/ffcc">code</a> /
-                <a href="https://drive.google.com/open?id=0B4nuwEMaEsnmWkJQMlFPSFNzbEk">output</a> /
-                <a href="https://blog.google/products/photos/six-tips-make-your-photos-pop/">blog post</a> /
-                <a href="https://9to5google.com/2017/03/03/google-photos-auto-white-balance/">p</a><a href="https://www.engadget.com/2017/03/03/google-photos-automatically-fixes-your-pictures-white-balance/">r</a><a href="https://lifehacker.com/google-photos-will-now-automatically-adjust-the-white-b-1793009155">e</a><a href="https://petapixel.com/2017/03/06/google-photos-will-now-automatically-white-balance-snapshots/">s</a><a href="http://www.theverge.com/2017/3/3/14800062/google-photos-auto-white-balance-android">s</a>
-                <p></p>
-                <p>Color space can be aliased, allowing white balance models to be learned and evaluated in the frequency domain. This improves accuracy by 13-20% and speed by 250-3000x.</p>
-                <p>This technology is used by <a href="https://photos.google.com/">Google Photos</a> and <a href="https://www.google.com/maps">Google Maps</a>.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="jump_stop()" onmouseover="jump_start()" bgcolor="#ffffd0">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='jump_image'><img src='images/jump_anim.gif'></div>
-                <img src='images/jump_still.png'>
-              </div>
-              <script type="text/javascript">
-                function jump_start() {
-                  document.getElementById('jump_image').style.opacity = "1";
-                }
-
-                function jump_stop() {
-                  document.getElementById('jump_image').style.opacity = "0";
-                }
-                jump_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/1RBnTrtzqmuO8uj3GQaR5vBJZjIC3Jxjn/view?usp=sharing">
-                  <papertitle>Jump: Virtual Reality Video</papertitle>
-                </a>
-                <br>
-                <a href="http://mi.eng.cam.ac.uk/~ra312/">Robert Anderson</a>, <a href="https://www.cs.unc.edu/~gallup/">David Gallup</a>, <strong>Jonathan T. Barron</strong>, <a href="https://mediatech.aalto.fi/~janne/index.php">Janne Kontkanen</a>, <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>, <a href="http://carlos-hernandez.org/">Carlos Hern&aacutendez</a>, <a href="https://homes.cs.washington.edu/~sagarwal/">Sameer Agarwal</a>, <a href="https://homes.cs.washington.edu/~seitz/">Steven M Seitz</a>
-                <br>
-                <em>SIGGRAPH Asia</em>, 2016
-                <br>
-                <a href="https://drive.google.com/file/d/11D4eCDXqqFTtZT0WS2COJE0hsAN3QEww/view?usp=sharing">supplement</a> /
-                <a href="https://www.youtube.com/watch?v=O0qUYynupTI">video</a> /
-                <a href="data/Anderson2016.bib">bibtex</a> /
-                <a href="https://blog.google/products/google-vr/jump-using-omnidirectional-stereo-vr-video/">blog post</a>
-                <p></p>
-                <p>Using computer vision and a ring of cameras, we can make video for virtual reality headsets that is both stereo and 360&deg;.</p>
-                <p>This technology is used by <a href="https://vr.google.com/jump/">Jump</a>. </p>
-                <p></p>
-                </a>
-              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="hdrp_stop()" onmouseover="hdrp_start()">
-            <td width="25%">
-
-              <div class="one">
-                <div class="two" id='hdrp_image'><img src='images/hdrp_after.jpg'></div>
-                <img src='images/hdrp_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function hdrp_start() {
-                  document.getElementById('hdrp_image').style.opacity = "1";
-                }
-
-                function hdrp_stop() {
-                  document.getElementById('hdrp_image').style.opacity = "0";
-                }
-                hdrp_stop()
-              </script>
-
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/1SSSmVHWbMQ7sZMOredSVWVJXbXobkyzA/view?usp=sharing">
-                  <papertitle>Burst Photography for High Dynamic Range and Low-Light Imaging on Mobile Cameras</papertitle>
-                </a>
-                <br>
-                <a href="http://people.csail.mit.edu/hasinoff/">Samuel W. Hasinoff</a>, <a href="http://www.dsharlet.com/">Dillon Sharlet</a>, <a href="http://www.geisswerks.com/">Ryan Geiss</a>, <a href="http://people.csail.mit.edu/abadams/">Andrew Adams</a>, <strong>Jonathan T. Barron</strong>, Florian Kainz, <a href="http://people.csail.mit.edu/jiawen/">Jiawen Chen</a>, <a href="http://graphics.stanford.edu/~levoy/">Marc Levoy</a>
-                <br>
-                <em>SIGGRAPH Asia</em>, 2016
-                <br>
-                <a href="http://hdrplusdata.org/">project page</a> /
-                <a href="https://drive.google.com/open?id=15EUuSDi1BtHUgQCaiooVrD44qYKIC3vx">supplement</a> /
-                <a href="data/Hasinoff2016.bib">bibtex</a>
-                <p></p>
-                <p>Mobile phones can take beautiful photographs in low-light or high dynamic range environments by aligning and merging a burst of images.</p>
-                <p>This technology is used by the <a href="https://research.googleblog.com/2014/10/hdr-low-light-and-high-dynamic-range.html">Nexus HDR+</a> feature. </p>
-                <p></p>
-                </a>
-              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="bs_stop()" onmouseover="bs_start()" bgcolor="#ffffd0">
-            <td width="25%">
-
-              <div class="one">
-                <div class="two" id='bs_image'><img src='images/BS_after.jpg'></div>
-                <img src='images/BS_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function bs_start() {
-                  document.getElementById('bs_image').style.opacity = "1";
-                }
-
-                function bs_stop() {
-                  document.getElementById('bs_image').style.opacity = "0";
-                }
-                bs_stop()
-              </script>
-
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/1zFzCaFwkGK1EGmJ_KEqb-ZsRJhfUKN2S/view?usp=sharing">
-                  <papertitle>The Fast Bilateral Solver</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="https://cs.stanford.edu/~poole/">Ben Poole</a>
-                <br>
-                <em>ECCV</em>, 2016 &nbsp <font color="red"><strong>(Best Paper Honorable Mention)</strong></font>
-                <br>
-                <a href="http://arxiv.org/abs/1511.03296">arXiv</a> /
-                <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmdEREcjhlSXM2NGs/view?usp=sharing">supplement</a> /
-                <a href="data/BarronPooleECCV2016.bib">bibtex</a> /
-                <a href="http://videolectures.net/eccv2016_barron_bilateral_solver/">video (they messed up my slides, use &rarr;)</a> /
-                <a href="https://drive.google.com/file/d/19x1AeN0PFus6Pjrd8nR-vCmJ6bNEefsC/view?usp=sharing">keynote</a>
-                (or <a href="https://drive.google.com/file/d/1p9nduiymK9jUh7WfwlsMjBfW8RoNe_61/view?usp=sharing">PDF</a>) /
-                <a href="https://github.com/poolio/bilateral_solver">code</a> /
-                <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmaDI3bm5VeDRxams/view?usp=sharing">depth super-res results</a> /
-                <a href="data/BarronPooleECCV2016_reviews.txt">reviews</a>
-                <p></p>
-                <p>Our solver smooths things better than other filters and faster than other optimization algorithms, and you can backprop through it.
-                  <p></p>
-                  </a>
-                </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="diverdi_stop()" onmouseover="diverdi_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='diverdi_image'><img src='images/diverdi_after.jpg'></div>
-                <img src='images/diverdi_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function diverdi_start() {
-                  document.getElementById('diverdi_image').style.opacity = "1";
-                }
-
-                function diverdi_stop() {
-                  document.getElementById('diverdi_image').style.opacity = "0";
-                }
-                diverdi_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/1mmT-LuK_eBZsl3qp4-fAshEPdgfbgvNE/view?usp=sharing">
-                  <papertitle>Geometric Calibration for Mobile, Stereo, Autofocus Cameras</papertitle>
-                </a>
-                <br>
-                <a href="http://www.stephendiverdi.com/">Stephen DiVerdi</a>,
-                <strong>Jonathan T. Barron</strong>
-                <br>
-                <em>WACV</em>, 2016
-                <br>
-                <a href="data/Diverdi2016.bib">bibtex</a>
-                <p></p>
-                <p>Standard techniques for stereo calibration don't work for cheap mobile cameras.
-            </td>
-          </tr>
-
-          <tr onmouseout="dt_stop()" onmouseover="dt_start()">
-            <td width="25%">
-
-              <div class="one">
-                <div class="two" id='dt_image'><img src='images/DT_edge.jpg'></div>
-                <img src='images/DT_image.jpg'>
-              </div>
-              <script type="text/javascript">
-                function dt_start() {
-                  document.getElementById('dt_image').style.opacity = "1";
-                }
-
-                function dt_stop() {
-                  document.getElementById('dt_image').style.opacity = "0";
-                }
-                dt_stop()
-              </script>
-
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/178Xj2PZ1w6hZJpucU-TiZOoCemJmvsVQ/view?usp=sharing">
-                  <papertitle>Semantic Image Segmentation with Task-Specific Edge Detection Using CNNs and a Discriminatively Trained Domain Transform</papertitle>
-                </a>
-                <br>
-                <em>CVPR</em>, 2016
-                <br>
-                <a href="http://liangchiehchen.com/">Liang-Chieh Chen</a>, <strong>Jonathan T. Barron</strong>, <a href="http://ttic.uchicago.edu/~gpapan/">George Papandreou</a>, <a href="http://www.cs.ubc.ca/~murphyk/">Kevin Murphy</a>, <a href="http://www.stat.ucla.edu/~yuille/">Alan L. Yuille</a>
-                <br>
-                <a href="data/Chen2016.bib">bibtex</a></em> /
-                <a href="http://liangchiehchen.com/projects/DeepLab.html">project page</a> /
-                <a href="https://bitbucket.org/aquariusjay/deeplab-public-ver2">code</a>
-                <p></p>
-                <p>By integrating an edge-aware filter into a convolutional neural network we can learn an edge-detector while improving semantic segmentation.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="ccc_stop()" onmouseover="ccc_start()" bgcolor="#ffffd0">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='ccc_image'><img src='images/ccc_after.jpg'></div>
-                <img src='images/ccc_before.jpg'>
-              </div>
-              <script type="text/javascript">
-                function ccc_start() {
-                  document.getElementById('ccc_image').style.opacity = "1";
-                }
-
-                function ccc_stop() {
-                  document.getElementById('ccc_image').style.opacity = "0";
-                }
-                ccc_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/1id74VNDL8ACrrWf6vYgN2M4kS8gd4n7w/view?usp=sharing">
-                  <papertitle>Convolutional Color Constancy</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>
-                <br>
-                <em>ICCV</em>, 2015
-                <br>
-                <a href="https://drive.google.com/file/d/1vO3sVOMihmpNqsuASeR46Y_iME0lOANR/view?usp=sharing">supplement</a> / <a href="data/BarronICCV2015.bib">bibtex</a> / <a href="https://youtu.be/saHwKY9rfx0">video</a> </a> (or <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmalBNUzlENUJSVDg/view?usp=sharing">mp4</a>)
-                <p></p>
-                <p>By framing white balance as a chroma localization task we can discriminatively learn a color constancy model that beats the state-of-the-art by 40%.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td width="25%">
-              <img src='images/Shelhamer2015.jpg'>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/1stygV71uBruD7Ck9CaAQr7nREvr3DtUL/view?usp=sharing">
-                  <papertitle>Scene Intrinsics and Depth from a Single Image</papertitle>
-                </a>
-                <br>
-                <a href="http://imaginarynumber.net/">Evan Shelhamer</a>, <strong>Jonathan T. Barron</strong>, <a href="http://www.eecs.berkeley.edu/%7Etrevor/">Trevor Darrell</a>
-                <br>
-                <em>ICCV Workshop</em>, 2015
-                <br>
-                <a href="data/Shelhamer2015.bib">bibtex</a>
-                <p></p>
-                <p>The monocular depth estimates produced by fully convolutional networks can be used to inform intrinsic image estimation.</p>
-            </td>
-          </tr>
-
-          <tr bgcolor="#ffffd0" onmouseout="defocus_stop()" onmouseover="defocus_start()">
-            <td width="25%">
-              <div id='lens_blurry' class='hidden'><img src="images/BarronCVPR2015_anim.gif"></div>
-              <div id='lens_sharp'>
-                <a href="images/BarronCVPR2015_anim.gif"><img src="images/BarronCVPR2015_still.jpg"></a>
-              </div>
-              <script type="text/javascript">
-                function defocus_start() {
-                  document.getElementById('lens_blurry').style.display = 'inline';
-                  document.getElementById('lens_sharp').style.display = 'none';
-                }
-
-                function defocus_stop() {
-                  document.getElementById('lens_blurry').style.display = 'none';
-                  document.getElementById('lens_sharp').style.display = 'inline';
-                }
-                defocus_stop()
-              </script>
-            </td>
-            <td valign="middle" width="75%">
-              <p>
-                <a href="https://drive.google.com/file/d/1R4RdaBZIs-uJobhIFs9yKf3jIsaHQNH0/view?usp=sharing">
-                  <papertitle>Fast Bilateral-Space Stereo for Synthetic Defocus</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://people.csail.mit.edu/abadams/">Andrew Adams</a>, <a href="http://people.csail.mit.edu/yichangshih/">YiChang Shih, <a href="http://carlos-hernandez.org/">Carlos Hern&aacutendez</a>
-                <br>
-                <em>CVPR</em>, 2015 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-                <br>
-                <a href="https://drive.google.com/file/d/125qgMdqeT1vojMIijIKcOF099LjUgUOL/view?usp=sharing">abstract</a> / <a href="https://drive.google.com/file/d/1HGGvVOGxmPjvgdK5q3UD1Qb5Nttg6kq9/view?usp=sharing">supplement</a> / <a href="data/BarronCVPR2015.bib">bibtex</a> /
-                <a href="http://techtalks.tv/talks/fast-bilateral-space-stereo-for-synthetic-defocus/61624/">talk</a> /
-                <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmSzZZdUJSMllSUkE/view?usp=sharing">keynote</a> (or <a href="https://drive.google.com/open?id=0B4nuwEMaEsnmZ1ZXUzBCWDJYeFU">PDF</a>)
-                <p></p>
-                <p>By embedding a stereo optimization problem in "bilateral-space" we can very quickly solve for an edge-aware depth map, letting us render beautiful depth-of-field effects.</p>
-                <p>This technology is used by the <a href="http://googleresearch.blogspot.com/2014/04/lens-blur-in-new-google-camera-app.html">Google Camera "Lens Blur"</a> feature. </p>
-                <p></p>
-                </a>
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td width="25%"><img src="images/PABMM2015.jpg" alt="PontTuset" width="160" style="border-style: none">
-              <td width="75%" valign="middle">
-                <p>
-                  <a href="https://drive.google.com/file/d/1EUvfslce9iqCbJ_IAE4J1ser6hpse_uh/view?usp=sharing" id="MCG_journal">
-                    <papertitle>Multiscale Combinatorial Grouping for Image Segmentation and Object Proposal Generation</papertitle>
-                  </a>
-                  <br>
-                  <a href="http://imatge.upc.edu/web/people/jordi-pont-tuset">Jordi Pont-Tuset</a>, <a href="http://www.cs.berkeley.edu/~arbelaez/">Pablo Arbel&aacuteez</a>, <strong>Jonathan T. Barron</strong>, <a href="http://imatge.upc.edu/web/ferran">Ferran Marqu&eacutes</a>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                  <br>
-                  <em>TPAMI</em>, 2017
-                  <br>
-                  <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/">project page</a> /
-                  <a href="data/PontTusetTPAMI2017.bib">bibtex</a> /
-                  <a href="https://drive.google.com/file/d/1AiB78Fy7QVA3KqgcooyzMAC5L8HhNzjz/view?usp=sharing">fast eigenvector code</a>
-                </p>
-                <p>
-                  We produce state-of-the-art contours, regions and object candidates, and we compute normalized-cuts eigenvectors 20&times faster.
-                </p>
-                <p>
-                  This paper subsumes our CVPR 2014 paper.
-                </p>
-              </td>
-          </tr>
-
-          <tr bgcolor="#ffffd0" onmouseout="sirfs_stop()" onmouseover="sirfs_start()">
-            <td width="25%">
-              <div class="one">
-                <div class="two" id='sirfs_image'>
-                  <a href="images/Estee.png"><img src='images/Estee_160.png' style="border-style: none"></a>
-                </div>
-                <a href="images/Estee.png"><img src='images/Estee_160_prodB2.png' style="border-style: none"></a>
-              </div>
-              <script type="text/javascript">
-                function sirfs_start() {
-                  document.getElementById('sirfs_image').style.opacity = "1";
-                }
-
-                function sirfs_stop() {
-                  document.getElementById('sirfs_image').style.opacity = "0";
-                }
-                sirfs_stop()
-              </script>
-            </td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/1RvyCiDMg--jyO8lLBvopp0o271LvREoa/view?usp=sharing" id="SIRFS">
-                  <papertitle>Shape, Illumination, and Reflectance from Shading</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>TPAMI</em>, 2015
-                <br>
-                <a href="https://drive.google.com/file/d/1D3k6u4Ek2dWm2Yf7kl1Vu_g1HFSxztqF/view?usp=sharing">supplement</a> / <a href="data/BarronMalikTPAMI2015.bib">bibtex</a> / <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmVWpfa19mbUxIYW8/view?usp=sharing">keynote</a> (or <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmazJvLXJUb0NuM1U/view?usp=sharing">powerpoint</a>, <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmTDBUWE96VHJndjg/view?usp=sharing">PDF</a>) / <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a> / <a href="https://drive.google.com/file/d/1vg9Rb-kBntSTnTCzVgFlskkPXvTB_5aq/view?usp=sharing">code &amp; data</a> / <a href="data/why_did_this_paper_come_out_in_2015.txt">rant</a> / <a href="https://drive.google.com/file/d/11X5Zfjy7Q7oP_V2rtqy2f5-x9YgQUAFd/view?usp=sharing">kudos</a>
-              </p>
-              <p>
-                We present <strong>SIRFS</strong>, which can estimate shape, chromatic illumination, reflectance, and shading from a single image of an masked object.
-              </p>
-              <p>
-                This paper subsumes our CVPR 2011, CVPR 2012, and ECCV 2012 papers.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%"><img src="images/ArbalaezCVPR2014.jpg" alt="ArbalaezCVPR2014" width="160" height="120" style="border-style: none">
-              <td width="75%" valign="middle">
-                <p>
-                  <a href="https://drive.google.com/file/d/1M0wijHY134F9ETBgO8mjeuKUSblTRLG0/view?usp=sharing">
-                    <papertitle>Multiscale Combinatorial Grouping</papertitle>
-                  </a>
-                  <br>
-                  <a href="http://www.cs.berkeley.edu/~arbelaez/">Pablo Arbel&aacuteez</a>, <a href="http://imatge.upc.edu/web/people/jordi-pont-tuset">Jordi Pont-Tuset</a>, <strong>Jonathan T. Barron</strong>, <a href="http://imatge.upc.edu/web/ferran">Ferran Marqu&eacutes</a>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                  <br>
-                  <em>CVPR</em>, 2014
-                  <br>
-                  <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/mcg/">project page</a> /
-                  <a href="data/ArbelaezCVPR2014.bib">bibtex</a>
-                </p>
-                <p>This paper is subsumed by <a href="#MCG_journal">our journal paper</a>.</p>
-			</p>
-              </td>
-          </tr>
-          <tr onmouseout="flyspin_stop()" onmouseover="flyspin_start()">
-            <td width="25%">
-              <div id='flyspin' class='hidden'><img src="images/BarronICCV2013_160.gif"></div>
-              <div id='flystill'>
-                <a href="images/BarronICCV2013.gif"><img src="images/BarronICCV2013_160.jpg"></a>
-              </div>
-              <script type="text/javascript">
-                function flyspin_start() {
-                  document.getElementById('flyspin').style.display = 'inline';
-                  document.getElementById('flystill').style.display = 'none';
-                }
-
-                function flyspin_stop() {
-                  document.getElementById('flyspin').style.display = 'none';
-                  document.getElementById('flystill').style.display = 'inline';
-                }
-                flyspin_stop()
-              </script>
-            </td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/1shvItvx_8Sb8QNXhrOXkuRmx2618iwNJ/view?usp=sharing">
-                  <papertitle>Volumetric Semantic Segmentation using Pyramid Context Features</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~arbelaez/">Pablo Arbel&aacuteez</a>, <a href="http://big.lbl.gov/">Soile V. E. Ker&aumlnen</a>, <a href="http://www.lbl.gov/gsd/biggin.html">Mark D. Biggin</a>,
-                <br> <a href="http://dwknowles.lbl.gov/">David W. Knowles</a>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>ICCV</em>, 2013
-                <br>
-                <a href="https://drive.google.com/file/d/1htiLpMAcYLtuBthmAb4XHnOYxUbkfnqR/view?usp=sharing">supplement</a> /
-                <a href="https://drive.google.com/file/d/1qoYeFNa443myn2SfcdhmCsYBqE9xQrPD/view?usp=sharing">poster</a> /
-                <a href="data/BarronICCV2013.bib">bibtex</a> / <a href="http://www.youtube.com/watch?v=Y56-FcfnlVA&hd=1">video 1</a> (or <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmZ1ZLaHdQYzAxNlU/view?usp=sharing">mp4</a>) / <a href="http://www.youtube.com/watch?v=mvRoYuP6-l4&hd=1">video 2</a> (or <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmZ1ZLaHdQYzAxNlU/view?usp=sharing">mp4</a>) / <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmSF9YdWJjQmh4QW8/view?usp=sharing">code &amp; data</a>
-              </p>
-              <p>
-                We present a technique for efficient per-voxel linear classification, which enables accurate and fast semantic segmentation of volumetric Drosophila imagery.
-                <br>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%"><img src="images/3DSP_160.jpg" alt="3DSP" width="160" height="120" style="border-style: none">
-              <td width="75%" valign="middle">
-                <p>
-                  <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmbG1tOGIta3N1Wjg/view?usp=sharing" id="3DSP">
-                    <papertitle>3D Self-Portraits</papertitle>
-                  </a>
-                  <br>
-                  <a href="http://www.hao-li.com/">Hao Li</a>, <a href="http://www.evouga.com/">Etienne Vouga</a>, Anton Gudym, <a href="http://www.cs.princeton.edu/~linjiel/">Linjie Luo</a>, <strong>Jonathan T. Barron</strong>, Gleb Gusev
-                  <br>
-                  <em>SIGGRAPH Asia</em>, 2013
-                  <br>
-                  <a href="http://www.youtube.com/watch?v=DmUkbZ0QMCA">video</a> / <a href="http://shapify.me/">shapify.me</a> / <a href="data/3DSP_siggraphAsia2013.bib">bibtex</a>
-                </p>
-                <p>
-                  Our system allows users to create textured 3D models of themselves in arbitrary poses using only a single 3D sensor.
-                  <br>
-                </p>
-              </td>
-          </tr>
-          <tr onmouseout="rgbd_stop()" onmouseover="rgbd_start()">
-            <td width="25%">
-              <div id='rgbd_anim' class='hidden'><img src="images/SceneSIRFS.gif"></div>
-              <div id='rgbd_still'><img src="images/SceneSIRFS-still.jpg"></div>
-              <script type="text/javascript">
-                function rgbd_start() {
-                  document.getElementById('rgbd_anim').style.display = 'inline';
-                  document.getElementById('rgbd_still').style.display = 'none';
-                }
-
-                function rgbd_stop() {
-                  document.getElementById('rgbd_anim').style.display = 'none';
-                  document.getElementById('rgbd_still').style.display = 'inline';
-                }
-                rgbd_stop()
-              </script>
-            </td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/1snypSLhzC0jXCchJRsWpcDZ7Es5hDmXo/view?usp=sharing">
-                  <papertitle>Intrinsic Scene Properties from a Single RGB-D Image</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>CVPR</em>, 2013 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-                <br>
-                <a href="https://drive.google.com/file/d/1cLUw72WpgdZ_3TQAjJABdgywqjBfn_Mq/view?usp=sharing">supplement</a> / <a href="data/BarronMalikCVPR2013.bib">bibtex</a> / <a href="http://techtalks.tv/talks/intrinsic-scene-properties-from-a-single-rgb-d-image/58614/">talk</a> / <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmWW1CZGJPbi12R0k/view?usp=sharing">keynote</a> (or <a href="https://drive.google.com/file/d/19q3EFf6GIb4UFcCN2DVU2jVKpxRj5kxf/view?usp=sharing">powerpoint</a>, <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmMzQ4ZVp1SWdnVkk/view?usp=sharing">PDF</a>) / <a href="https://drive.google.com/open?id=1ZbPScVA6Efqd-ESvojl92sw8K-82Xxry">code &amp; data</a>
-              </p>
-              <p>By embedding mixtures of shapes &amp; lights into a soft segmentation of an image, and by leveraging the output of the Kinect, we can extend SIRFS to scenes.
-                <br>
-                <br>TPAMI Journal version: <a href="https://drive.google.com/file/d/1iQiUxZvjPPnb8rFCwXYesTgFSRk7mkAq/view?usp=sharing">version</a> / <a href="data/BarronMalikTPAMI2015B.bib">bibtex</a>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%"><img src="images/Boundary.jpg" alt="Boundary_png" style="border-style: none"></a>
-            </td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/1H4YPovfrvcce3HGMEhidwU2l2fTcNR5y/view?usp=sharing">
-                <papertitle>Boundary Cues for 3D Object Shape Recovery</papertitle>
-                </a>
-                <br>
-                <a href="http://www.kevinkarsch.com/">Kevin Karsch</a>,
-                <a href="http://web.engr.illinois.edu/~liao17/">Zicheng Liao</a>,
-                <a href="http://web.engr.illinois.edu/~jjrock2/">Jason Rock</a>,
-                <strong>Jonathan T. Barron</strong>,
-                <a href="http://www.cs.illinois.edu/homes/dhoiem/">Derek Hoiem</a>
-                <br>
-                <em>CVPR</em>, 2013
-                <br>
-                <a href="https://drive.google.com/file/d/0B4nuwEMaEsnmLUQ5SVJTcUZIYXc/view?usp=sharing">supplement</a> / <a href="data/KarschCVPR2013.bib">bibtex</a>
-              </p>
-              <p>Boundary cues (like occlusions and folds) can be used for shape reconstruction, which improves object recognition for humans and computers.
-                <br>
-              </p>
-            </td>
-          </tr>
-          <tr onmouseout="eccv12_stop()" onmouseover="eccv12_start()">
-            <td width="25%">
-              <div id='eccv12_anim' class='hidden'>
-                <a href="https://drive.google.com/file/d/1brxb58CfRPe7KEER4Q_fYS9B_J-hiS0t/view?usp=sharing"><img src="images/ECCV2012_small.gif"></a>
-              </div>
-              <div id='eccv12_still'><img src="images/ECCV2012_still.jpg"></div>
-              <script type="text/javascript">
-                function eccv12_start() {
-                  document.getElementById('eccv12_anim').style.display = 'inline';
-                  document.getElementById('eccv12_still').style.display = 'none';
-                }
-
-                function eccv12_stop() {
-                  document.getElementById('eccv12_anim').style.display = 'none';
-                  document.getElementById('eccv12_still').style.display = 'inline';
-                }
-                eccv12_stop()
-              </script>
-            </td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/1NczR4pJ-s0YBjCe0rCevMt8IM5JPuUrc/view?usp=sharing">
-                  <papertitle>Color Constancy, Intrinsic Images, and Shape Estimation</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>ECCV</em>, 2012
-                <br>
-                <a href="https://drive.google.com/file/d/1zuxhWZ3i6THvuRRBeE7dM_BJfDxO72Fq/view?usp=sharing">supplement</a> / <a href="data/BarronMalikECCV2012.bib">bibtex</a> / <a href="https://drive.google.com/file/d/12x8mhqpFsA6p0u6ZQW-ieRKF8hlQBKKe/view?usp=sharing">poster</a> / <a href="http://www.youtube.com/watch?v=NnePYprvFvA">video</a>
-              </p>
-              <p>This paper is subsumed by <a href="#SIRFS">SIRFS</a>.</p>
-            </td>
-          </tr>
-          <tr onmouseout="cvpr12_stop()" onmouseover="cvpr12_start()">
-            <td width="25%">
-              <div class="one"  style="height: 120px">
-                <div class="two" id='cvpr12_image' style="height: 120px">
-                  <img src='images/BarronCVPR2012_after.jpg' style="border-style: none">
-                </div>
-                <img src='images/BarronCVPR2012_before.jpg' style="border-style: none">
-              </div>
-              <script type="text/javascript">
-                function cvpr12_start() {
-                  document.getElementById('cvpr12_image').style.opacity = "1";
-                }
-                function cvpr12_stop() {
-                  document.getElementById('cvpr12_image').style.opacity = "0";
-                }
-                cvpr12_stop()
-              </script>
-            </td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/17RfINbE2dr2EjXp9MtGO0MHJLQmQVhvT/view?usp=sharing">
-                  <papertitle>Shape, Albedo, and Illumination from a Single Image of an Unknown Object</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>CVPR</em>, 2012
-                <br>
-                <a href="https://drive.google.com/file/d/1Im_bUI42AP9VPoNtsjLajvtLRiwv39k3/view?usp=sharing">supplement</a> / <a href="data/BarronMalikCVPR2012.bib">bibtex</a> / <a href="https://drive.google.com/file/d/1IAlSF4k3_CEL9dfbaMiNTFPBoEkLhsRl/view?usp=sharing">poster</a>
-              </p>
-              <p>
-                This paper is subsumed by <a href="#SIRFS">SIRFS</a>.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%"><img src="images/B3DO.jpg" alt="b3do" width="160" style="border-style: none"></td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/1_S8EQyngbHQrB415o0XkQ4V9SMzdEgWT/view?usp=sharing">
-                  <papertitle>A Category-Level 3-D Object Dataset: Putting the Kinect to Work</papertitle>
-                </a>
-                <br>
-                <a href="http://www.eecs.berkeley.edu/%7Eallie/">Allison Janoch</a>, <a href="http://sergeykarayev.com/">Sergey Karayev</a>, <a href="http://www.eecs.berkeley.edu/%7Ejiayq/">Yangqing Jia</a>, <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/%7Emfritz/">Mario Fritz</a>, <a href="http://www.icsi.berkeley.edu/%7Esaenko/">Kate Saenko</a>, <a href="http://www.eecs.berkeley.edu/%7Etrevor/">Trevor Darrell</a>
-                <br>
-                <em>ICCV 3DRR Workshop</em>, 2011
-                <br>
-                <a href="data/B3DO_ICCV_2011.bib">bibtex</a> / <a href="https://drive.google.com/file/d/1qf4-U5RhSw12O7gzQwW66SMQhs2FWYDW/view?usp=sharing">"smoothing" code</a>
-              </p>
-              <p>We present a large RGB-D dataset of indoor scenes and investigate ways to improve object detection using depth information.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%"><img src="images/safs.jpg" alt="safs_small" width="160" height="160" style="border-style: none"></td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/1EZTOO5xezLYcyIFgAzs4KuZFLbTcwTDH/view?usp=sharing">
-                  <papertitle>High-Frequency Shape and Albedo from Shading using Natural Image Statistics</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>CVPR</em>, 2011
-                <br>
-                <a href="data/BarronMalikCVPR2011.bib">bibtex</a>
-              </p>
-              <p>This paper is subsumed by <a href="#SIRFS">SIRFS</a>.</p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%"><img src="images/fast_texture.jpg" alt="fast-texture" width="160" height="160"></td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/1rc05NatkQVmUDlGCAYcHSrvAzTpU9knT/view?usp=sharing">
-                  <papertitle>Discovering Efficiency in Coarse-To-Fine Texture Classification</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a>
-                <br>
-                <em>Technical Report</em>, 2010
-                <br>
-                <a href="data/BarronTR2010.bib">bibtex</a>
-              </p>
-              <p>We introduce a model and feature representation for joint texture classification and segmentation that learns how to classify accurately and when to classify efficiently. This allows for sub-linear coarse-to-fine classification.
-                <br>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%"><img src="images/prl.jpg" alt="prl" width="160" height="160"></td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/13rVuJpcytRdLYCnKpq46g7B7IzSrPQ2P/view?usp=sharing">
-                  <papertitle>Parallelizing Reinforcement Learning</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://www.eecs.berkeley.edu/~dsg/">Dave Golland</a>, <a href="http://www.cs.berkeley.edu/~nickjhay/">Nicholas J. Hay</a>
-                <br>
-                <em>Technical Report</em>, 2009
-                <br>
-                <a href="data/BarronPRL2009.bib">bibtex</a>
-                <p>
-                  <br> Markov Decision Problems which lie in a low-dimensional latent space can be decomposed, allowing modified RL algorithms to run orders of magnitude faster in parallel.
-                </p>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%"><img src="images/bd_promo.jpg" alt="blind-date" width="160" height="160"></td>
-            <td width="75%" valign="middle">
-              <p>
-                <a href="https://drive.google.com/file/d/1PQjzKgFcrAesMIDJr-WDlCwuGUxZJZwO/view?usp=sharing">
-                  <papertitle>Blind Date: Using Proper Motions to Determine the Ages of Historical Images</papertitle>
-                </a>
-                <br>
-                <strong>Jonathan T. Barron</strong>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
-                <br>
-                <em>The Astronomical Journal</em>, 136, 2008
-              </p>
-              <p>Using the relative motions of stars we can accurately estimate the date of origin of historical astronomical images.</p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%"><img src="images/clean_promo.jpg" alt="clean-usnob" width="160" height="160"></td>
-            <td width="75%" valign="middle">
-              <p>
-                <p>
-                  <a href="https://drive.google.com/file/d/1YvRx-4hrZoCk-nl6OgVJZlHAqOiN5hWq/view?usp=sharing">
-                    <papertitle>Cleaning the USNO-B Catalog Through Automatic Detection of Optical Artifacts</papertitle>
-                  </a>
-                  <br>
-                  <strong>Jonathan T. Barron</strong>, <a href="http://stumm.ca/">Christopher Stumm</a>, <a href="http://cosmo.nyu.edu/hogg/">David W. Hogg</a>, <a href="http://www.astro.princeton.edu/~dstn/">Dustin Lang</a>, <a href="http://cs.nyu.edu/~roweis/">Sam Roweis</a>
-                  <br>
-                  <em>The Astronomical Journal</em>, 135, 2008
-                </p>
-                <p>We use computer vision techniques to identify and remove diffraction spikes and reflection halos in the USNO-B Catalog.</p>
-                <p>In use at <a href="http://www.astrometry.net">Astrometry.net</a>
-                  <br>
-                  <br>
-                </p>
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td>
-              <heading>Service</heading>
-            </td>
-          </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellpadding="20">
-          <tr>
-            <td width="25%"><img src="images/cvf.jpg"></td>
-            <td width="75%" valign="center">
-              <p>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">
-                  Area Chair, CVPR 2019
-                </a>
-                <br>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">
-                  Area Chair, CVPR 2018
-                </a>
-                <br>
-                <br>
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td width="25%"><img src="images/cs188.jpg" alt="cs188"></td>
-            <td width="75%" valign="center">
-              <p>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">
-                  Graduate Student Instructor, CS188 Spring 2011
-                </a>
-                <br>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">
-                  Graduate Student Instructor, CS188 Fall 2010
-                </a>
-                <br>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">
-                  Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition
-                </a>
-                <br>
-              </p>
-            </td>
-          </tr>
-        </table>
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
-            <td>
-              <br>
-              <p align="right">
-                <font size="2">
-                  Feel free to steal this website's <a href="https://github.com/jonbarron/jonbarron_website">source code</a>, just add a link back to my website. Send me an email when you're done and I'll link to your new page from here:
-                  <a href="https://cs.stanford.edu/~poole/">&#10025;</a>
-                  <a href="http://www.cs.berkeley.edu/~akar/">&#10025;</a>
-                  <a href="http://www.eecs.berkeley.edu/~biancolin">&#10025;</a>
-                  <a href="http://www.rossgirshick.info/">&#10025;</a>
-                  <a href="http://www.cs.cmu.edu/~igkioule/">&#10025;</a>
-                  <a href="http://kelvinxu.github.io/">&#10025;</a>
-                  <a href="http://imagine.enpc.fr/~groueixt/">&#10025;</a>
-                  <a href="https://people.eecs.berkeley.edu/~cbfinn/">&#10025;</a>
-                  <a href="http://disi.unitn.it/~nabi/">&#10025;</a>
-                  <a href="http://changyeobshin.com/">&#10025;</a>
-                  <a href="https://mbanani.github.io/">&#10025;</a>
-                  <a href="https://aseembits93.github.io">&#10025;</a>
-                  <a href="http://fuwei.us/">&#10025;</a>
-                  <a href="http://www-bcf.usc.edu/~iacopoma/">&#10025;</a>
-                  <a href="https://lorisbaz.github.io/">&#10025;</a>
-                  <a href="http://ieng6.ucsd.edu/~dplarson/">&#10025;</a>
-                  <a href="http://chapiro.net/">&#10025;</a>
-                  <a href="https://people.eecs.berkeley.edu/~vitchyr/">&#10025;</a>
-                  <a href="https://people.eecs.berkeley.edu/~kellman/">&#10025;</a>
-                  <a href="http://www0.cs.ucl.ac.uk/staff/C.Godard/">&#10025;</a>
-                  <a href="http://www.cs.toronto.edu/~byang/">&#10025;</a>
-                  <a href="http://people.kyb.tuebingen.mpg.de/harmeling/">&#10025;</a>
-                  <a href="https://prakashmurali.bitbucket.io/">&#10025;</a>
-                  <a href="http://www.cs.bham.ac.uk/~exa371/">&#10025;</a>
-                  <a href="http://prosello.com/">&#10025;</a>
-                  <a href="http://www.ee.ucr.edu/~nmithun/">&#10025;</a>
-                  <a href="https://rmullapudi.bitbucket.io/">&#10025;</a>
-                  <a href="http://www.briangauch.com/">&#10025;</a>
-                  <a href="https://people.eecs.berkeley.edu/~coline/">&#10025;</a>
-                  <a href="https://www.andrew.cmu.edu/user/sjayasur/website.html">&#10025;</a>
-                  <a href="http://www.eecs.berkeley.edu/~rakelly/">&#10025;</a>
-                  <a href="https://gkioxari.github.io/">&#10025;</a>
-                  <a href="http://ai.stanford.edu/~hsong/">&#10025;</a>
-                  <a href="http://www.ee.ucr.edu/~mbappy/">&#10025;</a>
-                  <a href="http://adithyamurali.com/">&#10025;</a>
-                  <a href="https://people.eecs.berkeley.edu/~khoury/">&#10025;</a>
-                  <a href="https://prashanthtk.github.io/">&#10025;</a>
-                  <a href="http://tomhenighan.com/">&#10025;</a>
-                  <a href="http://mbchang.github.io/">&#10025;</a>
-                  <a href="https://people.eecs.berkeley.edu/~haarnoja/">&#10025;</a>
-                  <a href="http://web.stanford.edu/~sfort1/">&#10025;</a>
-                  <a href="http://www.arkin.xyz/">&#10025;</a>
-                  <a href="http://i-am-karan-singh.github.io/">&#10025;</a>
-                  <a href="https://pxlong.github.io/">&#10025;</a>
-                  <a href="https://dheeraj2444.github.io/">&#10025;</a>
-                  <a href="https://fabienbaradel.github.io/">&#10025;</a>
-                  <a href="https://ankitdhall.github.io/">&#10025;</a>
-                  <a href="http://nafiz.ml/">&#10025;</a>
-                  <a href="http://www.cs.cmu.edu/~aayushb">&#10025;</a>
-                  <a href="http://bjornstenger.github.io/">&#10025;</a>
-                  <a href="http://users.eecs.northwestern.edu/~mif365/">&#10025;</a>
-                  <a href="https://www.macs.hw.ac.uk/~ic14/">&#10025;</a>
-                  <a href="https://ai.stanford.edu/~kaidicao/">&#10025;</a>
-                  <a href="http://hengfan.byethost7.com/">&#10025;</a>
-                  <a href="https://reyhaneaskari.github.io/">&#10025;</a>
-                  <a href="https://tianheyu927.github.io/">&#10025;</a>
-                  <a href="http://people.csail.mit.edu/janner/">&#10025;</a>
-                  <a href="http://www.sjoerdvansteenkiste.com/">&#10025;</a>
-                  <a href="http://joaoloula.github.io/">&#10025;</a>
-                  <a href="https://bhairavmehta95.github.io/">&#10025;</a>
-                  <a href="https://palmieri.github.io/">&#10025;</a>
-                  <a href="https://psuriana.github.io/">&#10025;</a>
-                  <a href="http://yushi2.web.engr.illinois.edu/">&#10025;</a>
-                  <a href="http://ruthcfong.github.io/">&#10025;</a>
-                  <a href="https://shraman-rc.github.io/">&#10025;</a>
-                  <a href="http://rahulgarg.com/">&#10025;</a>
-                  <a href="http://www.cs.cmu.edu/~inigam/">&#10025;</a>
-                  <a href="http://djstrouse.com/">&#10025;</a>
-                  <a href="https://lekhamohan.github.io/">&#10025;</a>
-                  <a href="https://avijit9.github.io/">&#10025;</a>
-                  <a href="http://www.seas.ucla.edu/~sahba/">&#10025;</a>
-                  <a href="https://pages.jh.edu/~falambe1/">&#10025;</a>
-                  <a href="http://www.dcc.fc.up.pt/~vitor.cerqueira/">&#10025;</a>
-                  <a href="https://people.eecs.berkeley.edu/~bmild/">&#10025;</a>
-                  <a href="https://web.eecs.umich.edu/~subh/">&#10025;</a>
-                  <a href="http://www.cs.utexas.edu/~pgoyal/">&#10025;</a>
-                  <a href="http://www.eecs.wsu.edu/~fchowdhu/">&#10025;</a>
-                  <a href="https://aarzchan.github.io/">&#10025;</a>
-                  <a href="https://www.seas.upenn.edu/~oleh/">&#10025;</a>
-                  <a href="http://shamak.github.io/">&#10025;</a>
-                  <a href="http://jianfeng.us/">&#10025;</a>
-                  <a href="https://pulkitkumar95.github.io/">&#10025;</a>
-                  <a href="https://epiception.github.io/">&#10025;</a>
-                  <a href="https://weimengpu.github.io/">&#10025;</a>
-                  <a href="http://users.ices.utexas.edu/~faraz/">&#10025;</a>
-                  <a href="https://vitorgodeiro.github.io/">&#10025;</a>
-                  <a href="http://cgm.technion.ac.il/people/Roey/">&#10025;</a>
-                  <a href="https://mancinimassimiliano.github.io/">&#10025;</a>
-                  <a href="https://roshanjrajan.me/">&#10025;</a>
-                  <a href="http://irc.cs.sdu.edu.cn/~qingnan/">&#10025;</a>
-                  <a href="http://individual.utoronto.ca/yuenj/">&#10025;</a>
-                  <a href="https://akhileshgotmare.github.io/">&#10025;</a>
-                  <a href="http://vllab.ucmerced.edu/nakul/">&#10025;</a>
-                  <a href="https://hasibzunair.github.io/">&#10025;</a>
-                  <a href="http://dalezhou.com/">&#10025;</a>
-                  <a href="https://abhoi.github.io/">&#10025;</a>
-                  <a href="https://www.cse.unr.edu/~jyi/">&#10025;</a>
-                  <a href="http://www.liuzhaolun.com/">&#10025;</a>
-                  <a href="https://abhisheknaik.me/">&#10025;</a>
-                  <a href="https://cfernandezlab.github.io/">&#10025;</a>
-                  <a href="https://aasharma90.github.io/">&#10025;</a>
-                  <a href="https://kdizon.github.io/">&#10025;</a>
-                  <a href="https://www.cse.wustl.edu/~zhihao.xia/">&#10025;</a>
-                  <a href="http://mmozes.net/">&#10025;</a>
-                  <a href="https://kpertsch.github.io/">&#10025;</a>
-                  <a href="http://xiatianpei.com/">&#10025;</a>
-                  <a href="https://nsrishankar.github.io/">&#10025;</a>
-                  <a href="http://xujuefei.com/">&#10025;</a>
-                  <a href="https://www.cs.rochester.edu/u/lchen63/">&#10025;</a>
-                  <a href="http://deyachatterjee.github.io/">&#10025;</a>
-                  <a href="http://hossein1387.github.io/index.html">&#10025;</a>
-                  <a href="https://zx007zls.github.io/">&#10025;</a>
-                  <a href="http://people.eecs.berkeley.edu/~nol/">&#10025;</a>
-                  <a href="http://www.cs.princeton.edu/~jw60/">&#10025;</a>
-                  <a href="https://cseweb.ucsd.edu/~owen/">&#10025;</a>
-                  <a href="https://subhajitchaudhury.github.io/">&#10025;</a>
-                  <a href="https://sandarshp.github.io/">&#10025;</a>
-                  <a href="https://medhini.github.io/">&#10025;</a>
-                  <a href="http://cindyxinyiwang.github.io/">&#10025;</a>
-                  <a href="https://lasirenashann.github.io/">&#10025;</a>
-                  <a href="http://ambuj.se/">&#10025;</a>
-                  <a href="http://kylehsu.me/">&#10025;</a>
-                  <a href="https://ujjwal95.github.io/">&#10025;</a>
-                  <a href="https://aditya5558.github.io/">&#10025;</a>
-                  <a href="http://www.majumderb.com/">&#10025;</a>
-                  <a href="http://ylqiao.net/">&#10025;</a>
-                  <a href="https://xiaochunliu.github.io/">&#10025;</a>
-                  <a href="https://dhawgupta.github.io/">&#10025;</a>
-                  <a href="http://cliu.info/">&#10025;</a>
-                  <a href="https://taochenshh.github.io/">&#10025;</a>
-                  <a href="http://www-scf.usc.edu/~ayushj/">&#10025;</a>
-                  <a href="https://zexuehe.github.io/">&#10025;</a>
-                  <a href="https://ofkar.github.io/">&#10025;</a>
-                  <a href="https://amir-arsalan.github.io/">&#10025;</a>
-                  <a href="https://vinamrabenara.github.io/">&#10025;</a>
-                  <a href="https://likojack.bitbucket.io/">&#10025;</a>
-                  <a href="http://www-personal.umich.edu/~zeyu/">&#10025;</a>
-                  <a href="https://utkarshojha.github.io/">&#10025;</a>
-                  <a href="https://fahmidmorshed.github.io/">&#10025;</a>
-                  <a href="https://www.cs.ubc.ca/~setarehc/">&#10025;</a>
-                  <a href="http://viveksolanki.com/">&#10025;</a>
-                  <a href="http://webdiis.unizar.es/~alcolea/">&#10025;</a>
-                  <a href="http://www.songyaojiang.com/">&#10025;</a>
-                  <a href="https://www.csee.umbc.edu/~bhp1/">&#10025;</a>
-                  <a href="http://acl.mit.edu/people">&#10025;</a>
-                  <a href="https://vignanv.com/">&#10025;</a>
-                  <a href="https://liuyicun.me/">&#10025;</a>
-                  <a href="https://heyuanmingong.github.io/">&#10025;</a>
-                  <a href="https://abhishekaich27.github.io/">&#10025;</a>
-                  <a href="https://www.cs.ubc.ca/~saeidnp/">&#10025;</a>
-                  <a href="https://uuujf.github.io/">&#10025;</a>
-                  <a href="https://csjcai.github.io/">&#10025;</a>
-                  <a href="https://iphyer.github.io/Mingren_Website/">&#10025;</a>
-                  <a href="https://binzhubz.github.io/">&#10025;</a>
-                  <a href="https://steinar.dev/">&#10025;</a>
-                  <a href="https://tnq177.github.io/">&#10025;</a>
-                  <a href="https://jonathan-schwarz.github.io/">&#10025;</a>
-                  <a href="http://www.ronnieclark.co.uk/">&#10025;</a>
-                  <a href="http://www.aparnadhinakaran.com/">&#10025;</a>
-                  <a href="https://zjysteven.github.io/">&#10025;</a>
-                  <a href="http://aakash30jan.github.io/">&#10025;</a>
-                  <a href="https://people.eecs.berkeley.edu/~shelhamer/">&#10025;</a>
-                  <a href="https://junaidcs032.github.io/">&#10025;</a>
-                  <a href="https://liangxuy.github.io/">&#10025;</a>
-                  </font>
-              </p>
-            </td>
-          </tr>
-        </table>
-         <!–– Please delete this script if you use this HTML. ––>
-        <script type="text/javascript">
-          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-        </script>
-        <script type="text/javascript">
-          try {
-            var pageTracker = _gat._getTracker("UA-7580334-1");
-            pageTracker._trackPageview();
-          } catch (err) {}
-        </script>
-        </td>
-    </tr>
+      <p align="center"><font size="7">Deepak Pathak</font><br>
+          <b>Email</b>:
+          <font id="email" style="display:inline;">dre@.cplaetshkeykba.ue <a href="#" onclick="emailScramble.initAnimatedBubbleSort();return false;">unscramble</a></font>
+          <script>
+          emailScramble = new scrambledString(document.getElementById('email'),
+              'emailScramble', 'erepc@aahby.etulk.skde',
+              [12,13,15,1,8,7,2,5,4,11,18,10,17,3,22,16,6,19,9,14,21,20]);
+          </script>
+        </p><table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        
+      
+        <tbody><tr>
+          <td width="60%" valign="middle" align="justify">
+          <p>I am currently a PhD candidate in CS at UC Berkeley working on Artificial Intelligence at the intersection of Computer Vision, Machine Learning and Robotics. I am a part of <a href="https://bair.berkeley.edu/">Berkeley AI Research Lab (BAIR)</a>, advised by <a href="http://www.cs.berkeley.edu/~trevor/">Trevor Darrell</a> and <a href="http://www.cs.berkeley.edu/~efros/">Alyosha Efros</a>.</p>
+      
+          <p>My ultimate goal is to build agents with a human-like ability to <i>generalize</i> in real and diverse environments. I believe understanding how to <i>continually</i> develop knowledge and acquire new skills from just raw sensory data will play a vital role in achieving this goal. I draw inspiration from psychology to build practical systems at the interface of vision, learning and robotics that can learn using <i>data as its own supervision</i>. My research is supported by fellowships from <a href="https://research.fb.com/announcing-the-2018-cohort-of-facebook-fellows-and-emerging-scholars/">Facebook</a>, <a href="https://research.nvidia.com/grad_fellows/2017/DeepakPathak">Nvidia</a>, and <a href="https://snapresearchfellowship.splashthat.com/">Snapchat</a>.</p>
+      
+          <p>Earlier, I received a Bachelors in CS at IIT Kanpur, working with <a href="http://www.cse.iitk.ac.in/users/amit/">Amitabha Mukerjee</a>.<!-- My homepage from that time is archived <a href="iitk_website/index.html">here</a>.--> I have also spent time at <a href="https://www.ri.cmu.edu/">CMU RI</a>, <a href="https://research.fb.com/category/facebook-ai-research/">Facebook AI Research</a> (Seattle, Pittsburgh), and <a href="https://www.microsoft.com/en-us/research/">Microsoft Research</a> (NYC).</p>
+      
+          <p align="center">
+          <a href="CV_Pathak.pdf">CV</a> | <a href="https://scholar.google.cl/citations?user=AEsPCAUAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a> | <a href="https://github.com/pathak22">Github</a> | <a href="https://twitter.com/pathak2206"> Twitter </a>
+          </p>
+          </td>
+      
+          <td width="40%" valign="top"><a href="images/Deepak_Pathak.jpg"><img src="images/Deepak_Pathak.jpg" width="100%"></a></td>
+        </tr>
+      </tbody></table>
+      
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody><tr><td>
+          <sectionheading>News</sectionheading>
+          <ul>
+          <li> I am co-organizing the <a href="https://tarl2019.github.io/" target="_blank">Task Agnostic Reinforcement Learning</a> workshop at ICLR'19. Submission is open!</li>
+          <li> <a href="#ICLR19">ICLR'19 paper</a> on large-scale curiosity-driven learning covered in <a href="https://pathak22.github.io/large-scale-curiosity/index.html#media">The Economist and other media articles</a>.</li>
+          <li> I recently co-organized the <a href="http://pocv18.eecs.berkeley.edu/">Action, Perception and Organization</a> workshop at ECCV'18.</li>
+          <li> Received the <a href="https://research.fb.com/announcing-the-2018-cohort-of-facebook-fellows-and-emerging-scholars/" target="_blank">2018 Facebook Graduate Fellowship</a>. Thanks, Facebook!</li>
+          <li> <a href="#ICML18">ICML'18 paper</a> on human exploration got covered in <a href="https://rach0012.github.io/humanRL_website/index.html#media">MIT Tech Review and other media articles</a>.</li>
+          <li> Received the <a href="https://snapresearchfellowship.splashthat.com/" target="_blank">2017 Snap Inc. Research Fellowship Award</a>. Thanks, Snapchat!</li>
+          <li> <a href="#ICML17">ICML'17 paper</a> on curiosity-driven exploration got covered in <a href="https://pathak22.github.io/noreward-rl/index.html#media">MIT Tech Review and other media articles</a>.</li>
+          <li> Received the <a href="http://research.nvidia.com/grad_fellows/2017/DeepakPathak" target="_blank">2017 NVIDIA Graduate Fellowship</a>. Thanks, NVIDIA! Complete list <a href="http://research.nvidia.com/grad_fellowship/2017" target="_blank">here</a>.</li>
+          <!-- <li> <a href="#NIPS17">Paper</a> accepted at NIPS 2017 on multimodal image generation.</li> -->
+          <!-- <li> <a href="#ICLR18">Paper</a> on zero-shot visual imitation accepted at <a href="https://openreview.net/group?id=ICLR.cc/2018/Conference" target="_blank">ICLR 2018</a>.</li> -->
+          <!-- <li> <a href="#ICML17">Paper</a> accepted at ICML 2017 on curiosity-driven exploration for reinforcement learning. <a href="http://pathak22.github.io/noreward-rl/index.html#demoVideo">Video!</a></li> -->
+          <!-- <li> <a href="#CVPR17">Paper</a> accepted at CVPR 2017 on unsupervised learning using unlabeled videos.</li> -->
+          <!-- <li> <a href="#CVPR16">Paper</a> accepted at CVPR 2016 on unsupervised learning and inpainting. <a href="context_encoder/">Check out!</a></li> -->
+          <!-- <li> <a href="#JMLR16">Paper</a> accepted at JMLR 2016; extension of <a href="#CVPR15">CVPR'15</a> paper.</li> -->
+          <!-- <li> Paper about constrained structured regression (applied to intrinsics) on <a href="http://arxiv.org/abs/1511.07497">arXiv</a>.</li> -->
+          <!-- <li> <a href="#ICCV15">Paper</a> accepted at ICCV 2015 on Constrained CNN for segmentation. Code released on <a href="http://github.com/pathak22/ccnn">github</a> !</li> -->
+          <!-- <li> Undergrad <a href="#JPM15">paper</a> related to predicting <a href="http://www.huffingtonpost.co.uk/2015/02/23/microsoft-oscar-predictio_n_6735122.html">Oscars</a> published at <a href="http://ubplj.org/index.php/jpm/article/view/1048">JPM</a>. See <a href="#oscarPred">live predictions</a>.</li> -->
+          <!-- <li> <a href="#CVPR15">Paper</a> accepted at CVPR 2015 on domain adaptation</li> -->
+          <!-- <li> <a href="#ICLR15">Paper</a> accepted at ICLR Workshop 2015</li> -->
+          </ul>
+        </td></tr>
+      </tbody></table>
+      
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody><tr><td><sectionheading>Publications</sectionheading></td></tr>
+      </tbody></table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      
+        <tbody><tr>
+          <td width="33%" valign="top" align="center"><a href="https://pathak22.github.io/modular-assemblies/"><img src="images/assemblies19.gif" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="https://pathak22.github.io/modular-assemblies/" id="ASSEMBLIES19">
+            <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none">
+            <heading>Learning to Control Self-Assembling Morphologies:<br>A Study of Generalization via Modularity</heading></a><br>
+            <strong>Deepak Pathak*</strong>, Chris Lu*, Trevor Darrell, Phillip Isola and Alexei A. Efros<br>
+            <em>Pre-print on arXiv:1902.05546</em>, 2019 (under review)<br>
+            </p>
+      
+            <div class="paper" id="assemblies19">
+            <a href="https://pathak22.github.io/modular-assemblies/">project webpage</a> |
+            <a href="https://pathak22.github.io/modular-assemblies/resources/assemblies.pdf">pdf</a> |
+            <a href="javascript:toggleblock('assemblies19_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('assemblies19')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/1902.05546">arXiv</a> |
+            <a href="https://youtu.be/cg-RdkPtRiQ">video</a> |
+            <a href="https://pathak22.github.io/modular-assemblies/index.html#sourceCode">code</a>
+            <br>
+      
+            <p align="justify"> <i id="assemblies19_abs" style="display: none;">Contemporary sensorimotor learning approaches typically start with an existing complex agent (e.g., a robotic arm), which they learn to control. In contrast, this paper investigates a modular co-evolution strategy: a collection of primitive agents learns to dynamically self-assemble into composite bodies while also learning to coordinate their behavior to control these bodies. Each primitive agent consists of a limb with a motor attached at one end. Limbs may choose to link up to form collectives. When a limb initiates a link-up action and there is another limb nearby, the latter is magnetically connected to the 'parent' limb's motor. This forms a new single agent, which may further link with other agents. In this way, complex morphologies can emerge, controlled by a policy whose architecture is in explicit correspondence with the morphology. We evaluate the performance of these <em>dynamic</em> and <em>modular</em> agents in simulated environments. We demonstrate better generalization to test-time changes both in the environment, as well as in the agent morphology, compared to static and monolithic baselines.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathak19assemblies,
+        Author = {Pathak, Deepak and
+        Lu, Chris and Darrell, Trevor and
+        Isola, Phillip and Efros, Alexei A.},
+        Title = {Learning to Control Self-
+        Assembling Morphologies: A Study of
+        Generalization via Modularity},
+        Booktitle = {arXiv preprint arXiv:1902.05546},
+        Year = {2019}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top" align="center"><a href="https://pathak22.github.io/large-scale-curiosity/"><img src="images/iclr19.jpg" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="https://pathak22.github.io/large-scale-curiosity/" id="ICLR19">
+            <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none">
+            <heading>Large-Scale Study of Curiosity-Driven Learning</heading></a><br>
+            Yuri Burda*, Harri Edwards*, <strong>Deepak Pathak*</strong>, Amos Storkey, Trevor Darrell and Alexei A. Efros &nbsp;&nbsp;&nbsp;&nbsp;(* equal contribution, alphabetical)<br>
+            <em>International Conference on Learning Representations (ICLR)</em>, 2019<br>
+            </p>
+      
+            <div class="paper" id="iclr19">
+            <a href="https://pathak22.github.io/large-scale-curiosity/">project webpage</a> |
+            <a href="https://pathak22.github.io/large-scale-curiosity/resources/largeScaleCuriosity2018.pdf">pdf</a> |
+            <a href="javascript:toggleblock('iclr19_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('iclr19')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/1808.04355">arXiv</a> |
+            <a href="https://youtu.be/l1FqtAHfJLI">video</a>
+            <!-- <a href="https://pathak22.github.io/large-scale-curiosity/index.html#sourceCode">code</a> -->
+            <br>
+            Also presented at NIPS'18 Deep RL Workshop (Oral)<br>
+      
+            <p align="justify"> <i id="iclr19_abs" style="display: none;">Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal. In this paper: (a) We perform the first large-scale study of purely curiosity-driven learning, i.e. without any extrinsic rewards, across 54 standard benchmark environments, including the Atari game suite. Our results show surprisingly good performance, and a high degree of alignment between the intrinsic curiosity objective and the hand-designed extrinsic rewards of many game environments. (b) We investigate the effect of using different feature spaces for computing prediction error and show that random features are sufficient for many popular RL game benchmarks, but learned features appear to generalize better (e.g. to novel game levels in Super Mario Bros.). (c) We demonstrate limitations of the prediction-based rewards in stochastic setups.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakICLR19largescale,
+        Author = {Burda, Yuri and
+        Edwards, Harri and Pathak, Deepak and
+        Storkey, Amos and Darrell, Trevor and
+        Efros, Alexei A.},
+        Title = {Large-Scale Study of
+        Curiosity-Driven Learning},
+        Booktitle = {ICLR},
+        Year = {2019}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top" align="center"><a href="https://pathak22.github.io/seg-by-interaction/"><img src="images/cvprw18.jpg" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="https://pathak22.github.io/seg-by-interaction/" id="CVPRW18">
+            <heading>Learning Instance Segmentation by Interaction</heading></a><br>
+            <strong>Deepak Pathak*</strong>, Yide Shentu*, Dian Chen*, Pulkit Agrawal*, Trevor Darrell, Sergey Levine and Jitendra Malik<br>
+            <!-- <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2018<br> -->
+            <em><a href="https://sites.google.com/view/cvpr2018-robotic-vision/home" style="color:black" target="_blank">Deep Learning in Robotics Vision Workshop</a> (CVPR)</em>, 2018 (Oral)<br>
+            </p>
+      
+            <div class="paper" id="cvprw18">
+            <a href="https://pathak22.github.io/seg-by-interaction/">project webpage</a> |
+            <a href="papers/cvprw18.pdf">pdf</a> |
+            <a href="javascript:toggleblock('cvprw18_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('cvprw18')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/1806.08354">arXiv</a> |
+            <a href="https://pathak22.github.io/seg-by-interaction/index.html#sourceCode">code</a>
+            <br>
+      
+            <p align="justify"> <i id="cvprw18_abs" style="display: none;">We present an approach for building an active agent that learns to segment its visual observations into individual objects by interacting with its environment in a completely self-supervised manner. The agent uses its current segmentation model to infer pixels that constitute objects and refines the segmentation model by interacting with these pixels. The model learned from over 50K interactions generalizes to novel objects and backgrounds. To deal with noisy training signal for segmenting objects obtained by self-supervised interactions, we propose robust set loss. A dataset of robot's interactions along-with a few human labeled examples is provided as a benchmark for future research. We test the utility of the learned segmentation model by providing results on a downstream vision-based control task of rearranging multiple objects into target configurations from visual inputs alone.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakCVPRW18segByInt,
+            Author = {Pathak, Deepak and
+            Shentu, Yide and Chen, Dian and
+            Agrawal, Pulkit and Darrell, Trevor and
+            Levine, Sergey and Malik, Jitendra},
+            Title = {Learning Instance Segmentation
+              by Interaction},
+            Booktitle = {CVPR Workshop on Benchmarks for
+              Deep Learning in Robotic Vision},
+            Year = {2018}
+        }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top" align="center"><a href="https://arxiv.org/abs/1807.07560"><img src="images/compgan18.jpg" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="https://arxiv.org/abs/1807.07560" id="CompGAN18">
+            <heading>Compositional GAN: Learning Conditional Image Composition</heading></a><br>
+            Samaneh Azadi, <strong>Deepak Pathak</strong>, Sayna Ebrahimi and Trevor Darrell<br>
+            Pre-print on arXiv:1807.07560, 2018
+            <!-- <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2018<br> -->
+            </p>
+      
+            <div class="paper" id="compgan18">
+            <a href="https://arxiv.org/abs/1807.07560">arXiv pdf</a> |
+            <a href="javascript:toggleblock('compgan18_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('compgan18')" class="togglebib">bibtex</a>
+            <!-- <a href="https://pathak22.github.io/large-scale-curiosity/index.html#sourceCode">code</a> -->
+            <br>
+      
+            <p align="justify"> <i id="compgan18_abs" style="display: none;">Generative Adversarial Networks (GANs) can produce images of surprising complexity and realism, but are generally modeled to sample from a single latent source ignoring the explicit spatial interaction between multiple entities that could be present in a scene. Capturing such complex interactions between different objects in the world, including their relative scaling, spatial layout, occlusion, or viewpoint transformation is a challenging problem. In this work, we propose to model object composition in a GAN framework as a self-consistent composition-decomposition network. Our model is conditioned on the object images from their marginal distributions to generate a realistic image from their joint distribution by explicitly learning the possible interactions. We evaluate our model through qualitative experiments and user evaluations in both the scenarios when either paired or unpaired examples for the individual object images and the joint scenes are given during training. Our results reveal that the learned model captures potential interactions between the two object domains given as input to output new instances of composed scene at test time in a reasonable fashion.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{azadi18compgan,
+        Author = {Azadi, Samaneh and
+        Pathak, Deepak and
+        Ebrahimi, Sayna and Darrell, Trevor},
+        Title = {Compositional GAN: Learning
+        Conditional Image Composition},
+        Booktitle = {arXiv:1807.07560},
+        Year = {2018}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top" align="center"><a href="http://pathak22.github.io/zeroshot-imitation/"><img src="images/iclr18_1.gif" alt="sym" width="65%" border="1" style="border-color:black"><hr style="height:0pt; visibility:hidden; margin:0"><img src="images/iclr18_2.gif" alt="sym" width="65%" border="1" style="border-color:black"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="http://pathak22.github.io/zeroshot-imitation/" id="ICLR18">
+            <heading>Zero-Shot Visual Imitation</heading></a><br>
+            <strong>Deepak Pathak*</strong>, Parsa Mahmoudieh*, Guanghao Luo*, Pulkit Agrawal*, Dian Chen, Yide Shentu, Evan Shelhamer, Jitendra Malik, Alexei A. Efros, Trevor Darrell<br>
+            <em>International Conference on Learning Representations (ICLR)</em>, 2018<br>
+            <!-- <strong style="color:red">Oral presentation <a href="https://vimeo.com/237270588" target="_blank" style="color:red">[video]</a></strong> -->
+            <strong style="color:black">(Oral presentation)</strong>
+            </p>
+      
+            <div class="paper" id="iclr18">
+            <a href="http://pathak22.github.io/zeroshot-imitation/">webpage</a> |
+            <!-- <a href="http://pathak22.github.io/zeroshot-imitation/resources/iclr18.pdf">pdf</a> | -->
+            <a href="javascript:toggleblock('iclr18_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('iclr18')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/1804.08606" target="_blank">arXiv</a> |
+            <a href="http://pathak22.github.io/zeroshot-imitation/index.html#sourceCode">code</a> |
+            <a href="http://pathak22.github.io/zeroshot-imitation/index.html#demoVideos">videos</a> |
+            <a href="https://openreview.net/forum?id=BkisuzWRW" target="_blank">open-review</a> |
+            <a href="https://www.dropbox.com/s/36efg1t3qn6i495/2018_04_ZeroShotImitation.pptx">slides</a>
+            <br>
+      
+            <p align="justify"> <i id="iclr18_abs" style="display: none;">The current dominant paradigm for imitation learning relies on strong supervision of expert actions to learn both 'what' and 'how' to imitate. We pursue an alternative paradigm wherein an agent first explores the world without any expert supervision and then distills its experience into a goal-conditioned skill policy with a novel forward consistency loss. In our framework, the role of the expert is only to communicate the goals (i.e., what to imitate) during inference. The learned policy is then employed to mimic the expert (i.e., how to imitate) after seeing just a sequence of images demonstrating the desired task. Our method is 'zero-shot' in the sense that the agent never has access to expert actions during training or for the task demonstration at inference. We evaluate our zero-shot imitator in two real-world settings: complex rope manipulation with a Baxter robot and navigation in previously unseen office environments with a TurtleBot. Through further experiments in VizDoom simulation, we provide evidence that better mechanisms for exploration lead to learning a more capable policy which in turn improves end task performance.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakICLR18zeroshot,
+          Author = {Pathak, Deepak and
+          Mahmoudieh, Parsa and Luo, Guanghao and
+          Agrawal, Pulkit and Chen, Dian and
+          Shentu, Yide and Shelhamer, Evan and
+          Malik, Jitendra and Efros, Alexei A. and
+          Darrell, Trevor},
+          Title = {Zero-Shot Visual Imitation},
+          Booktitle = {ICLR},
+          Year = {2018}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top" align="center"><a href="https://rach0012.github.io/humanRL_website/"><img src="images/icml18.png" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="https://rach0012.github.io/humanRL_website/" id="ICML18">
+            <heading>Investigating Human Priors for Playing Video Games</heading></a><br>
+            Rachit Dubey, Pulkit Agarwal, <strong>Deepak Pathak</strong>, Thomas L. Griffiths, Alexei A. Efros<br>
+            <em>International Conference on Machine Learning (ICML)</em>, 2018<br>
+            <strong style="color:black">(Long oral presentation)</strong>
+            </p>
+      
+            <div class="paper" id="icml18">
+            <a href="https://rach0012.github.io/humanRL_website/">project webpage</a> |
+            <a href="papers/icml18.pdf">pdf</a> |
+            <a href="javascript:toggleblock('icml18_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('icml18')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/1802.10217">arXiv</a> |
+            <a href="https://youtu.be/Ol0-c9OE3VQ" target="_blank">video</a>
+            <br>
+            Also presented at ICLR'18 Workshop track.<br>
+      
+            <p align="justify"> <i id="icml18_abs" style="display: none;">What makes humans so good at solving seemingly complex video games? Unlike computers, humans bring in a great deal of prior knowledge about the world, enabling efficient decision making. This paper investigates the role of human priors for solving video games. Given a sample game, we conduct a series of ablation studies to quantify the importance of various priors on human performance. We do this by modifying the video game environment to systematically mask different types of visual information that could be used by humans as priors. We find that removal of some prior knowledge causes a drastic degradation in the speed with which human players solve the game, e.g. from 2 minutes to over 20 minutes. Furthermore, our results indicate that general priors, such as the importance of objects and visual consistency, are critical for efficient game-play.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakICML18human,
+          Author = {Dubey, Rachit and Agrawal, Pulkit
+          and Pathak, Deepak and Griffiths, Thomas L.
+          and Efros, Alexei A.},
+          Title = {Investigating Human Priors for
+          Playing Video Games},
+          Booktitle = {ICML},
+          Year = {2018}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top" align="center"><a href="http://pathak22.github.io/noreward-rl/"><img src="images/icml17_1.gif" alt="sym" width="49%" style="border-style: none">&nbsp;<img src="images/icml17_2.gif" alt="sym" width="49%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="http://pathak22.github.io/noreward-rl/" id="ICML17">
+            <heading>Curiosity-driven Exploration by Self-supervised Prediction</heading></a><br>
+            <strong>Deepak Pathak</strong>, Pulkit Agrawal, Alexei A. Efros and Trevor Darrell<br>
+            <em>International Conference on Machine Learning (ICML)</em>, 2017<br>
+            <strong><a href="https://vimeo.com/237270588" target="_blank" style="color:black">(Oral presentation link)</a></strong>
+            </p>
+            <div class="paper" id="icml17">
+            <a href="http://pathak22.github.io/noreward-rl/">project webpage</a> |
+            <a href="http://pathak22.github.io/noreward-rl/resources/icml17.pdf">pdf</a> |
+            <a href="javascript:toggleblock('icml17_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('icml17')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/1705.05363">arXiv</a> |
+            <a href="http://pathak22.github.io/noreward-rl/index.html#sourceCode">code</a> |
+            <a href="http://pathak22.github.io/noreward-rl/index.html#demoVideo">video</a> |
+            <a href="http://pathak22.github.io/noreward-rl/index.html#media">in the media</a>
+            <br>
+            Also presented at CVPR'17 <a href="http://juxi.net/workshop/deep-learning-robotic-vision-cvpr-2017/" style="color:black" target="_blank">Robotic Vision Workshop</a> (Oral)<br>
+      
+            <p align="justify"> <i id="icml17_abs" style="display: none;">In many real-world scenarios, rewards extrinsic to the agent are extremely sparse, or absent altogether. In such cases, curiosity can serve as an intrinsic reward signal to enable the agent to explore its environment and learn skills that might be useful later in its life. We formulate curiosity as the error in an agent's ability to predict the consequence of its own actions in a visual feature space learned by a self-supervised inverse dynamics model. Our formulation scales to high-dimensional continuous state spaces like images, bypasses the difficulties of directly predicting pixels, and, critically, ignores the aspects of the environment that cannot affect the agent. The proposed approach is evaluated in two environments: <i>VizDoom</i> and <i>Super Mario Bros</i>. Three broad settings are investigated: 1) sparse extrinsic reward, where curiosity allows for far fewer interactions with the environment to reach the goal; 2) exploration with no extrinsic reward, where curiosity pushes the agent to explore more efficiently; and 3) generalization to unseen scenarios (e.g. new levels of the same game) where the knowledge gained from earlier experience helps the agent explore new places much faster than starting from scratch.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakICMl17curiosity,
+          Author = {Pathak, Deepak and
+          Agrawal, Pulkit and
+          Efros, Alexei A. and
+          Darrell, Trevor},
+          Title = {Curiosity-driven Exploration
+          by Self-supervised Prediction},
+          Booktitle = {ICML},
+          Year = {2017}
+      }</pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top" align="center"><a href="https://junyanz.github.io/BicycleGAN"><img src="images/nips17.gif" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="https://junyanz.github.io/BicycleGAN" id="NIPS17">
+            <heading>Toward Multimodal Image-to-Image Translation</heading></a><br>
+            Jun-Yan Zhu, Richard Zhang, <strong>Deepak Pathak</strong>, Trevor Darrell, Alexei A. Efros, Oliver Wang, Eli Shechtman<br>
+            <em>Advances in Neural Information Processing Systems (NIPS)</em>, 2017<br>
+            </p>
+      
+            <div class="paper" id="nips17">
+            <a href="https://junyanz.github.io/BicycleGAN">project webpage</a> |
+            <a href="papers/nips17.pdf">pdf</a> |
+            <a href="javascript:toggleblock('nips17_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('nips17')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/1711.11586">arXiv</a> |
+            <a href="https://github.com/junyanz/BicycleGAN">code</a> |
+            <a href="https://youtu.be/JvGysD2EFhw">video</a>
+            <br>
+      
+            <p align="justify"> <i id="nips17_abs" style="display: none;">Many image-to-image translation problems are ambiguous, as a single input image may correspond to multiple possible outputs. In this work, we aim to model a distribution of possible outputs in a conditional generative modeling setting. The ambiguity of the mapping is distilled in a low-dimensional latent vector, which can be randomly sampled at test time. A generator learns to map the given input, combined with this latent code, to the output. We explicitly encourage the connection between output and the latent code to be invertible. This helps prevent a many-to-one mapping from the latent code to the output during training, also known as the problem of mode collapse, and produces more diverse results. We explore several variants of this approach by employing different training objectives, network architectures, and methods of injecting the latent code. Our proposed method encourages bijective consistency between the latent encoding and output modes. We present a systematic comparison of our method and other variants on both perceptual realism and diversity.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{zhu2017multimodal,
+          Author = {Zhu, Jun-Yan and Zhang, Richard
+          and Pathak, Deepak and Darrell, Trevor
+          and Efros, Alexei A and Wang, Oliver
+          and Shechtman, Eli},
+          Title = {Toward Multimodal Image-to-Image
+          Translation},
+          Booktitle = {NIPS},
+          Year = {2017}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top" align="center"><a href="unsupervised_video/"><img src="images/cvpr17.jpg" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="unsupervised_video/" id="CVPR17">
+            <heading>Learning Features by Watching Objects Move</heading></a><br>
+            <strong>Deepak Pathak</strong>, Ross Girshick, Piotr Dollár, Trevor Darrell and Bharath Hariharan<br>
+            <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2017<br>
+            </p>
+      
+            <div class="paper" id="cvpr17">
+            <a href="unsupervised_video/">project webpage</a> |
+            <a href="papers/cvpr17.pdf">pdf</a> |
+            <a href="javascript:toggleblock('cvpr17_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('cvpr17')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/1612.06370">arXiv</a> |
+            <a href="unsupervised_video/index.html#sourceCode">code</a>
+            <br>
+            Also presented at CVPR'17 Workshop on <a href="https://research.google.com/youtube8m/workshop.html">YouTube-8M Large-Scale Video Understanding</a> (Oral)<br>
+      
+            <p align="justify"> <i id="cvpr17_abs" style="display: none;">This paper presents a novel yet intuitive approach to unsupervised feature learning. Inspired by the human visual system, we explore whether low-level motion-based grouping cues can be used to learn an effective visual representation. Specifically, we use unsupervised motion-based segmentation on videos to obtain segments, which we use as `pseudo ground truth' to train a convolutional network to segment objects from a single frame. Given the extensive evidence that motion plays a key role in the development of the human visual system, we hope that this straightforward approach to unsupervised learning will be more effective than cleverly designed `pretext' tasks studied in the literature. Indeed, our extensive experiments show that this is the case. When used for transfer learning on object detection, our representation significantly outperforms previous unsupervised approaches across multiple settings, especially when training data for the target task is scarce.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakCVPR17learning,
+          Author = {Pathak, Deepak and
+          Girshick, Ross and
+          Doll{\'a}r, Piotr and
+          Darrell, Trevor and
+          Hariharan, Bharath},
+          Title = {Learning Features
+          by Watching Objects Move},
+          Booktitle = {CVPR},
+          Year = {2017}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top" align="center"><a href="context_encoder/"><img src="images/cvpr16.jpg" alt="sym" width="75%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="context_encoder/" id="CVPR16">
+            <heading>Context Encoders: Feature Learning by Inpainting</heading></a><br>
+            <strong>Deepak Pathak</strong>, Philipp Krähenbühl, Jeff Donahue, Trevor Darrell and Alexei A. Efros<br>
+            <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2016
+            <br></p>
+      
+            <div class="paper" id="cvpr16">
+            <a href="context_encoder/">project webpage</a> |
+            <a href="papers/cvpr16.pdf">pdf w/ supp</a> |
+            <a href="javascript:toggleblock('cvpr16_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('cvpr16')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/1604.07379">arXiv</a> |
+            <a href="https://github.com/pathak22/context-encoder">code</a> |
+            <a href="context_encoder/resources/ContextEncoder_Slides.pptx">slides</a>
+      
+            <p align="justify"> <i id="cvpr16_abs" style="display: none;">We present an unsupervised visual feature learning algorithm driven by context-based pixel prediction. By analogy with auto-encoders, we propose Context Encoders -- a convolutional neural network trained to generate the contents of an arbitrary image region conditioned on its surroundings. In order to succeed at this task, context encoders need to both understand the content of the entire image, as well as produce a plausible hypothesis for the missing part(s). When training context encoders, we have experimented with both a standard pixel-wise reconstruction loss, as well as a reconstruction plus an adversarial loss.  The latter produces much sharper results because it can better handle multiple modes in the output. We found that a context encoder learns a representation that captures not just appearance but also the semantics of visual structures. We quantitatively demonstrate the effectiveness of our learned features for CNN pre-training on classification, detection, and segmentation tasks. Furthermore, context encoders can be used for semantic inpainting tasks, either stand-alone or as initialization for non-parametric methods.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakCVPR16context,
+          Author = {Pathak, Deepak and
+          Kr\"ahenb\"uhl, Philipp and
+          Donahue, Jeff and
+          Darrell, Trevor and
+          Efros, Alexei A.},
+          Title = {Context Encoders:
+          Feature Learning by Inpainting},
+          Booktitle = {CVPR},
+          Year = {2016}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top"><a href="images/jmlr16.jpg"><img src="images/jmlr16.jpg" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="papers/jmlr16.pdf" id="JMLR16">
+            <heading>Large Scale Visual Recognition through Adaptation using Joint Representation and Multiple Instance Learning</heading></a><br>
+            Judy Hoffman, <strong>Deepak Pathak</strong>, Eric Tzeng, Jonathan Long, Sergio Guadarrama, Trevor Darrell and Kate Saenko<br>
+            <em>Journal of Machine Learning Research (JMLR)</em>, 2016
+            <br></p>
+      
+            <div class="paper" id="jmlr16">
+            <a href="papers/jmlr16.pdf">pdf</a> |
+            <a href="javascript:toggleblock('jmlr16_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('jmlr16')" class="togglebib">bibtex</a> |
+            <a href="http://jmlr.org/papers/volume17/15-223/15-223.pdf">jmlr</a>
+      
+            <p align="justify"> <i id="jmlr16_abs" style="display: none;">A major barrier towards scaling visual recognition systems is the difficulty of obtaining labeled images for large numbers of categories. Recently, deep convolutional neural networks (CNNs) trained used 1.2M+ labeled images have emerged as clear winners on object classification benchmarks. Unfortunately, only a small fraction of those labels are available with bounding box localization for training the detection task and even fewer pixel level annotations are available for semantic segmentation. It is much cheaper and easier to collect large quantities of image-level labels from search engines than it is to collect scene-centric images with precisely localized labels. We develop methods for learning large scale recognition models which exploit joint training over both weak (image-level) and strong (bounding box) labels and which transfer learned perceptual representations from strongly-labeled auxiliary tasks. We provide a novel formulation of a joint multiple instance learning method that includes examples from object-centric data with image-level labels when available, and also performs domain transfer learning to improve the underlying detector representation. We then show how to use our large scale detectors to produce pixel level annotations. Using our method, we produce a &gt;7.6K category detector and release code and models at <a href="http://lsda.berkeleyvision.org/">lsda.berkeleyvision.org</a>.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakJMLR16,
+          Author = {Hoffman, Judy and
+          Pathak, Deepak and
+          Tzeng, Eric and
+          Long, Jonathan and
+          Guadarrama, Sergio and
+          Darrell, Trevor and
+          Saenko, Kate},
+          Title = {Large Scale Visual Recognition
+          through Adaptation using Joint
+          Representation and Multiple Instance
+          Learning},
+          Booktitle = {JMLR},
+          Year = {2016}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top"><a href="images/iccv15.png"><img src="images/iccv15.png" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="papers/iccv15.pdf" id="ICCV15">
+            <heading>Constrained Convolutional Neural Networks for Weakly Supervised Segmentation</heading></a><br>
+            <strong>Deepak Pathak</strong>, Philipp Krähenbühl and Trevor Darrell<br>
+            <em>International Conference on Computer Vision (ICCV)</em>, 2015
+            <br></p>
+      
+            <div class="paper" id="iccv15">
+            <a href="papers/iccv15.pdf">pdf</a> |
+            <a href="papers/iccv15_supp.pdf">supp</a> |
+            <a href="javascript:toggleblock('iccv15_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('iccv15')" class="togglebib">bibtex</a> |
+            <a href="http://arxiv.org/abs/1506.03648">arXiv</a> |
+            <a href="https://github.com/pathak22/ccnn">code</a>
+      
+            <p align="justify"> <i id="iccv15_abs" style="display: none;">We present an approach to learn a dense pixel-wise labeling from image-level tags. Each image-level tag imposes constraints on the output labeling of a Convolutional Neural Network (CNN) classifier. We propose Constrained CNN (CCNN), a method which uses a novel loss function to optimize for any set of linear constraints on the output space (i.e. predicted label distribution) of a CNN. Our loss formulation is easy to optimize and can be incorporated directly into standard stochastic gradient descent optimization. The key idea is to phrase the training objective as a biconvex optimization for linear models, which we then relax to nonlinear deep networks. Extensive experiments demonstrate the generality of our new learning framework. The constrained loss yields state-of-the-art results on weakly supervised semantic image segmentation. We further demonstrate that adding slightly more supervision can greatly improve the performance of the learning algorithm.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakICCV15ccnn,
+          Author = {Pathak, Deepak and
+          Kr\"ahenb\"uhl, Philipp and
+          Darrell, Trevor},
+          Title = {Constrained Convolutional
+          Neural Networks for Weakly
+          Supervised Segmentation},
+          Booktitle = {ICCV},
+          Year = {2015}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top"><a href="images/cvpr15.png"><img src="images/cvpr15.png" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="papers/cvpr15.pdf" id="CVPR15">
+            <heading>Detector Discovery in the Wild: Joint Multiple Instance and Representation Learning</heading></a><br>
+            Judy Hoffman, <strong>Deepak Pathak</strong>, Trevor Darrell and Kate Saenko<br>
+            <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2015 <!-- <strong style="color:red">(Oral)</strong><br>
+                    <strong style="color:red">Best Student Paper Award</strong> -->
+            <br></p>
+      
+            <div class="paper" id="cvpr15">
+            <a href="papers/cvpr15.pdf">pdf</a> |
+            <a href="javascript:toggleblock('cvpr15_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('cvpr15')" class="togglebib">bibtex</a> |
+            <a href="http://arxiv.org/abs/1412.1135">arXiv</a>
+      
+            <p align="justify"> <i id="cvpr15_abs" style="display: none;">We develop methods for detector learning which exploit joint training over both weak (image-level) and strong (bounding box) labels and which transfer learned perceptual representations from strongly-labeled auxiliary tasks. Previous methods for weak-label learning often learn detector models independently using latent variable optimization, but fail to share deep representation knowledge across classes and usually require strong initialization. Other previous methods transfer deep representations from domains with strong labels to those with only weak labels, but do not optimize over individual latent boxes, and thus may miss specific salient structures for a particular category.  We propose a model that subsumes these previous approaches, and simultaneously trains a representation and detectors for categories with either weak or strong labels present. We provide a novel formulation of a joint multiple instance learning method that includes examples from classification-style data when available, and also performs domain transfer learning to improve the underlying detector representation. Our model outperforms known methods on ImageNet-200 detection with weak labels.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakCVPR15,
+          Author = {Hoffman, Judy and
+          Pathak, Deepak and
+          Darrell, Trevor and
+          Saenko, Kate},
+          Title = {Detector Discovery
+          in the Wild: Joint Multiple
+          Instance and Representation
+          Learning},
+          Booktitle = {CVPR},
+          Year = {2015}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top"><a href="images/iclr15.png"><img src="images/iclr15.png" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="papers/iclr15.pdf" id="ICLR15">
+            <heading>Fully Convolutional Multi-Class Multiple Instance Learning</heading></a><br>
+            <strong>Deepak Pathak</strong>, Evan Shelhamer, Jonathan Long and Trevor Darrell<br>
+            <em>Workshop Track in International Conf. on Learning Representations (ICLR)</em> 2015<br>
+            </p>
+      
+            <div class="paper" id="iclr15">
+            <a href="papers/iclr15.pdf">pdf</a> |
+            <a href="javascript:toggleblock('iclr15_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('iclr15')" class="togglebib">bibtex</a> |
+            <a href="http://arxiv.org/abs/1412.7144">arXiv</a>
+      
+            <p align="justify"> <i id="iclr15_abs" style="display: none;">Multiple instance learning (MIL) can reduce the need for costly annotation in tasks such as semantic segmentation by weakening the required degree of supervision. We propose a novel MIL formulation of multi-class semantic segmentation learning by a fully convolutional network. In this setting, we seek to learn a semantic segmentation model from just weak image-level labels. The model is trained end-to-end to jointly optimize the representation while disambiguating the pixel-image label assignment. Fully convolutional training accepts inputs of any size, does not need object proposal pre-processing, and offers a pixelwise loss map for selecting latent instances. Our multi-class MIL loss exploits the further supervision given by images with multiple labels. We evaluate this approach through preliminary experiments on the PASCAL VOC segmentation challenge.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakICLR15,
+          Author = {Pathak, Deepak and
+          Shelhamer, Evan and
+          Long, Jonathan and
+          Darrell, Trevor},
+          Title = {Fully Convolutional
+          Multi-Class Multiple Instance
+          Learning},
+          Booktitle = {ICLR Workshop},
+          Year = {2015}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top"><a href="images/wacv15.png"><img src="images/wacv15.png" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="papers/wacv15.pdf" id="WACV15">
+            <heading>Anomaly Localization in Topic-based Analysis of Surveillance Videos</heading></a><br>
+            <strong>Deepak Pathak</strong>, Abhijit Sharang and Amitabha Mukerjee<br>
+            <em>IEEE Winter Conference on Applications of Computer Vision (WACV)</em>, 2015
+            <br></p>
+      
+            <div class="paper" id="wacv15">
+            <a href="papers/wacv15.pdf">pdf</a> |
+            <a href="javascript:toggleblock('wacv15_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('wacv15')" class="togglebib">bibtex</a>
+      
+            <p align="justify"> <i id="wacv15_abs" style="display: none;">Topic-models for video analysis have been used for unsupervised identification of normal activity in videos, thereby enabling the detection of anomalous actions. However, while intervals containing anomalies are detected, it has not been possible to localize the anomalous activities in such models. This is a challenging problem as the abnormal content is usually a small fraction of the entire video data and hence distinctions in terms of likelihood are unlikely. Here we propose a methodology to extend the topic based analysis with rich local descriptors incorporating quantized spatio-temporal gradient descriptors with image location and size information. The visual clips over this vocabulary are then represented in latent topic space using models like pLSA. Further, we introduce an algorithm to quantify the anomalous content in a video clip by projecting the learned topic space information. Using the algorithm, we detect whether the video clip is abnormal and if positive, localize the anomaly in spatio-temporal domain. We also contribute one real world surveillance video dataset for comprehensive evaluation of the proposed algorithm. Experiments are presented on the proposed and two other standard surveillance datasets.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakWACV15,
+          Author = {Pathak, Deepak and
+          Sharang, Abhijit and
+          Mukerjee, Amitabha},
+          Title = {Anomaly Localization
+          in Topic-based Analysis of
+          Surveillance Videos},
+          Booktitle = {WACV},
+          Year = {2015}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top"><a href="images/fg15.png"><img src="images/fg15.png" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="papers/fg15.pdf" id="FG15">
+            <heading>Where is my Friend? - Person identification in Social Networks</heading></a><br>
+            <strong>Deepak Pathak</strong>, Sai Nitish Satyavolu and Vinay P. Namboodiri<br>
+            <em>IEEE Conference on Automatic Face and Gesture Recognition (FG)</em>, 2015
+            <br></p>
+      
+            <div class="paper" id="fg15">
+            <a href="papers/fg15.pdf">pdf</a> |
+            <a href="javascript:toggleblock('fg15_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('fg15')" class="togglebib">bibtex</a>
+      
+            <p align="justify"> <i id="fg15_abs" style="display: none;">One of the interesting applications of computer vision is to be able to identify or detect persons in real world. This problem has been posed in the context of identifying people in television series or in multi-camera networks. However, a common scenario for this problem is to be able to identify people among images prevalent on social networks. In this paper we present a method that aims to solve this problem in real world conditions where the person can be in any pose, profile and orientation and the face itself is not always clearly visible. Moreover, we show that the problem can be solved with as weak supervision only a label whether the person is present or not, which is usually the case as people are tagged in social networks. This is challenging as there can be ambiguity in association of the right person. The problem is solved in this setting using a latent max-margin formulation where the identity of the person is the latent parameter that is classified. This framework builds on other off the shelf computer vision techniques for person detection and face detection and is able to also account for inaccuracies of these components. The idea is to model the complete person in addition to face, that too with weak supervision. We also contribute three real-world datasets that we have created for extensive evaluation of the solution. We show using these datasets that the problem can be effectively solved using the proposed method.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakFG15,
+          Author = {Pathak, Deepak and
+          Satyavolu, Sai Nitish and
+          Namboodiri, Vinay P.},
+          Title = {Where is my Friend? -
+          Person identification in Social
+          Networks},
+          Booktitle = {Automatic Face and
+          Gesture Recognition (FG)},
+          Year = {2015}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      
+        <tr>
+          <td width="33%" valign="top"><center><a href="images/jpm15.jpg"><img src="images/jpm15.jpg" alt="sym" width="40%" style="border-style: none"></a></center></td>
+          <td width="67%" valign="top">
+            <p><a href="papers/jpm15.pdf" id="JPM15">
+            <heading>A Comparison Of Forecasting Methods: Fundamentals, Polling, Prediction Markets, and Experts</heading></a><br>
+            <strong>Deepak Pathak</strong>, David Rothschild and Miro Dudík<br>
+            <em>Journal of Prediction Markets (JPM)</em>, 2015
+            <br></p>
+      
+            <div class="paper" id="jpm15">
+            <a href="papers/jpm15.pdf">pdf</a> |
+            <a href="javascript:toggleblock('jpm15_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('jpm15')" class="togglebib">bibtex</a> |
+            <a href="http://predictwise.com/blog/2014/03/oscars/">predictions2014</a> |
+            <a href="http://predictwise.com/entertainment/2016-oscars" id="oscarPred">predictions2016</a>
+      
+            <p align="justify"> <i id="jpm15_abs" style="display: none;">We compare Oscar forecasts derived from four data types (fundamentals, polling, prediction markets, and domain experts) across three attributes (accuracy, timeliness and cost effectiveness). Fundamentals-based forecasts are relatively expensive to construct, an attribute the academic literature frequently ignores, and update slowly over time, constraining their accuracy. However, fundamentals provide valuable insights into the relationship between key indicators for nominated movies and their chances of victory. For instance, we find that the performance in other awards shows is highly predictive of the Oscar victory whereas box office results are not. Polling- based forecasts have the potential to be both accurate and timely. Timeliness requires incentives for frequent responses by high-information users. Accuracy is achieved by a proper transformation of raw polls. Prediction market prices are accurate forecasts, but can be further improved by simple transformations of raw prices, yielding the most accurate forecasts in our study. Expert forecasts exhibit some characteristics of fundamental models, but are generally not comparatively accurate or timely. This study is unique in both comparing and aggregating four traditional data sources, and considering critical attributes beyond accuracy. We believe that the results of this study generalize to many other domains.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakJPM15,
+          Author = {Pathak, Deepak and
+          Rothschild, David and
+          Dudik, Miro},
+          Title = {A Comparison Of Forecasting
+          Methods: Fundamentals, Polling,
+          Prediction Markets, and Experts},
+          Booktitle = {Journal of Prediction Markets (JPM)},
+          Year = {2015}
+      }
+      </pre>
+            </div>
+          </td>
+        </tr>
+      </tbody></table>
+      
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody><tr><td><sectionheading>Technical Reports</sectionheading></td></tr>
+      </tbody></table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+        <tbody><tr>
+          <td width="33%" valign="top"><a href="images/iclr16.png"><img src="images/iclr16.png" alt="sym" width="100%" style="border-style: none"></a>
+          </td><td width="67%" valign="top">
+            <p><a href="papers/iclr16.pdf" id="ICLR16">
+            <heading>Constrained Structured Regression with Convolutional Neural Networks</heading></a><br>
+            <strong>Deepak Pathak</strong>, Philipp Krähenbühl, Stella X. Yu and Trevor Darrell<br>
+            <em>arXiv:1511.07497</em>, 2015
+            <br></p>
+      
+            <div class="paper" id="iclr16">
+            <a href="papers/iclr16.pdf">pdf</a> |
+            <a href="javascript:toggleblock('iclr16_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('iclr16')" class="togglebib">bibtex</a> |
+            <a href="http://arxiv.org/abs/1511.07497">arXiv</a>
+      
+            <p align="justify"> <i id="iclr16_abs" style="display: none;">Convolutional Neural Networks (CNNs) have recently emerged as the dominant model in computer vision. If provided with enough training data, they predict almost any visual quantity. In a discrete setting, such as classification, CNNs are not only able to predict a label but often predict a confidence in the form of a probability distribution over the output space. In continuous regression tasks, such a probability estimate is often lacking. We present a regression framework which models the output distribution of neural networks. This output distribution allows us to infer the most likely labeling following a set of physical or modeling constraints. These constraints capture the intricate interplay between different input and output variables, and complement the output of a CNN. However, they may not hold everywhere. Our setup further allows to learn a confidence with which a constraint holds, in the form of a distribution of the constrain satisfaction. We evaluate our approach on the problem of intrinsic image decomposition, and show that constrained structured regression significantly increases the state-of-the-art.</i></p>
+      
+      <pre xml:space="preserve" style="display: none;">@inproceedings{pathakArxiv15,
+          Author = {Pathak, Deepak and
+          Kr\"ahenb\"uhl, Philipp and
+          Yu, Stella X. and
+          Darrell, Trevor},
+          Title = {Constrained Structured
+          Regression with Convolutional
+          Neural Networks},
+          Booktitle = {arXiv:1511.07497},
+          Year = {2015}
+      }</pre>
+            </div>
+          </td>
+        </tr>
+      </tbody></table>
+      
+      <table width="100%" align="center" border="0" cellpadding="20">
+        <tbody><tr><td><sectionheading>Teaching</sectionheading></td></tr>
+        <tr>
+          <td width="33%"><img src="images/cs189.jpg" alt="pacman" width="100%"></td>
+          <td width="67%" valign="center">
+            <p>
+              <a href="http://www-inst.eecs.berkeley.edu/~cs189/fa15/"><heading>CS189/289: Introduction to Machine Learning - Fall '15 (GSI) </heading></a><br>
+              <strong>Instructor</strong>: Prof. Alexei A. Efros and Dr. Isabelle Guyon<br>
+              <!-- Awarded the <a href="http://gsi.berkeley.edu/programs-services/award-programs/ogsi/">Outstanding GSI Award</a> -->
+            </p>
+            <p>
+              <a href="http://www-inst.eecs.berkeley.edu/~cs280/sp16"><heading>CS280: Computer Vision - Spring '16 (GSI)</heading></a><br>
+              <strong>Instructor</strong>: Prof. Trevor Darrell and Prof. Alexei A. Efros<br>
+            </p>
+          </td>
+        </tr>
+      </tbody></table>
+      
+      <table width="100%" align="center" border="0" cellpadding="20">
+        <tbody><tr><td>
+          <sectionheading>Selected Awards</sectionheading>
+          <ul>
+          <li> Facebook Graduate Fellowship (2018-2020)</li>
+          <li> Nvidia Graduate Fellowship (2017-2018)</li>
+          <li> Snapchat Inc. Graduate Fellowship (2017)</li>
+          <li> Gold Medal in Computer Science at IIT Kanpur (2014)</li>
+          <li> Best Undergraduate Thesis Award at IIT Kanpur (2014)</li>
+          </ul>
+        </td></tr>
+      </tbody></table>
+      
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <tbody><tr><td><br><p align="right"><font size="2">
+          Template: <a href="http://www.cs.berkeley.edu/~barron/">this</a>, <a href="http://www.cs.berkeley.edu/~sgupta/">this</a> and <a href="http://jeffdonahue.com/">this</a>
+          </font></p></td></tr>
+      </tbody></table>
+      
+        </td></tr>
+      </tbody>  
   </table>
 </body>
 
